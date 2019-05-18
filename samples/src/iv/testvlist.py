@@ -8,6 +8,7 @@ from vlist import *
 
 N = 100000
 
+
 class TestInterval(TestCase):
     def testIntersection(self):
         v = iv((0, 10), (20, 30))
@@ -65,7 +66,6 @@ class TestInterval(TestCase):
 
         w = v.intersect((-10, 40))
         self.failUnlessEqual(w, iv((0, 10), (20, 30)))
-
 
     def testAppend(self):
         v = iv((0, 10), (20, 30))
@@ -141,10 +141,8 @@ class TestInterval(TestCase):
         v.append((-10, 40))
         self.failUnlessEqual(v, iv((-10, 40)))
 
-
     def testMake(self):
         vs = iv()
-
 
     def testContains(self):
         v = iv((None, None))
@@ -174,7 +172,6 @@ class TestInterval(TestCase):
         self.failUnlessEqual(iv((5, 10)), v & w)
         self.failUnlessEqual(+iv((5, 10)), v & +w)
 
-
     def testUnion(self):
         v = iv((0, 1))
         w = iv((0, 1))
@@ -187,7 +184,6 @@ class TestInterval(TestCase):
         w = v | iv((2, 3))
         self.failUnlessEqual(w, iv((0, 1), (2, 3)))
 
-
     def testDifference(self):
         pass
         v = iv((0, 4))
@@ -197,7 +193,6 @@ class TestInterval(TestCase):
         self.failUnlessEqual(v ^ w, (v - w) | (w - v))
         self.failUnlessEqual(v ^ w, (v | w) - (v & w))
 
-
     def testEmpty(self):
         e = iv()
         self.failUnlessEqual(e, e)
@@ -206,7 +201,6 @@ class TestInterval(TestCase):
         self.failIf(-1 in e)
         self.failIf(0 in e)
         self.failIf(1 in e)
-
 
     def testHard(self):
         vs = iv(*[(a, a + 10) for a in range(0, 1000, 20)])

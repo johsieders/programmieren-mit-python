@@ -5,7 +5,7 @@ class MyProp(object):
         self.get = get
         self.set = set
 
-    def __get__(self, x, type = None):
+    def __get__(self, x, type=None):
         return self.get(x)
 
     def __set__(self, x, value):
@@ -16,7 +16,7 @@ class MyProp(object):
 
 
 def mystaticmethod(f):
-    return lambda s, *xs: f(*xs)        ## ignore self
+    return lambda s, *xs: f(*xs)  ## ignore self
 
 
 class MyClass(object):
@@ -42,4 +42,3 @@ class MyClass(object):
     @classmethod
     def make(cls, x):
         return cls(x)
-        

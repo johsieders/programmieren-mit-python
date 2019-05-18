@@ -8,6 +8,5 @@ sys.path.extend(['C:\\Users\\j.siedersleben\\Documents\\my-data\\js-doing\\pytho
 
 from vlist import *
 
-print v
-
-        
+print
+v

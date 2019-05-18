@@ -1,8 +1,8 @@
 ## DWH dimensions
 ## js 10/4/05
 
-from datetime import date
 from calendar import monthrange
+from datetime import date
 from types import SliceType
 
 
@@ -22,27 +22,26 @@ class DWHDimension(object):
     (2005):                 slice(n, n+365)                 ## a year
     ():                     slice(0, number of elements)    ## all of this dimension 
     """
-    
+
     def __init__(self, name):
         self.name = name
-        
-    def getName(self):                  ## this dimension's name
-        return self.name                ## 'time'
 
-    def getLevels(self):                ## this dimension's levels
-        raise NotImplementedError       ## [year, month, day]
+    def getName(self):  ## this dimension's name
+        return self.name  ## 'time'
 
-    def getElements(self, level):       ## this level's elements
-        raise NotImplementedError       ## month => jan, feb, .. dec
+    def getLevels(self):  ## this dimension's levels
+        raise NotImplementedError  ## [year, month, day]
 
-    def getSlice(self, *elements):      ## ()               the slice [0:number of elements]        
-        raise NotImplementedError       ## (2005,)          all of year 2005
-                                        ## (2005, 4)        all of april 2005
-                                        ## (2005, 4, 10)    the one-element-slice for that day
-    
-    def __len__(self):                  ## the number of elements of this dimension
-        return self.getSlice().stop    
+    def getElements(self, level):  ## this level's elements
+        raise NotImplementedError  ## month => jan, feb, .. dec
 
+    def getSlice(self, *elements):  ## ()               the slice [0:number of elements]
+        raise NotImplementedError  ## (2005,)          all of year 2005
+        ## (2005, 4)        all of april 2005
+        ## (2005, 4, 10)    the one-element-slice for that day
+
+    def __len__(self):  ## the number of elements of this dimension
+        return self.getSlice().stop
 
 
 class DWHSimpleDimension(DWHDimension):
@@ -57,38 +56,37 @@ class DWHSimpleDimension(DWHDimension):
      'alevel',          ## just one level
      'anelement']       ## just one element
     """
-    
+
     def __init__(self, dimDescriptor):
-        dimDescriptor = iter(dimDescriptor)        
-        name = dimDescriptor.next()                         ## 'Produkt'
-        super(DWHSimpleDimension, self).__init__(name)        
-        self.levels = dimDescriptor.next().split()          ## ['Sparte', 'Gruppe', 'Produkt']
+        dimDescriptor = iter(dimDescriptor)
+        name = dimDescriptor.next()  ## 'Produkt'
+        super(DWHSimpleDimension, self).__init__(name)
+        self.levels = dimDescriptor.next().split()  ## ['Sparte', 'Gruppe', 'Produkt']
         self.slices = {}
-        lastElements = [None] * len(self.levels)            ## [None, None, None]
+        lastElements = [None] * len(self.levels)  ## [None, None, None]
         n = len(lastElements)
-        
+
         for count, record in enumerate(dimDescriptor):
             newElements = record.split()
             ## close incomplete slices
-            if count > 0:       
+            if count > 0:
                 for i in range(len(newElements)):
-                    self.slices[tuple(lastElements[:n-i])] = \
-                        slice(self.slices[tuple(lastElements[:n-i])], count)
+                    self.slices[tuple(lastElements[:n - i])] = \
+                        slice(self.slices[tuple(lastElements[:n - i])], count)
             ## update lastElements
-            lastElements[n-len(newElements):] = newElements
+            lastElements[n - len(newElements):] = newElements
             ## insert incomplete slices
             for i in range(len(newElements)):
-                self.slices[tuple(lastElements[:n-i])] = count
-                
-        count += 1
-        for item in self.slices.items():             
-            if type(item[1]) is not SliceType:          ## collect incomplete entries
-                self.slices[item[0]] = slice(item[1], count)
-        self.slices[()] = slice(0, count)               ## the entry for this dimension
+                self.slices[tuple(lastElements[:n - i])] = count
 
+        count += 1
+        for item in self.slices.items():
+            if type(item[1]) is not SliceType:  ## collect incomplete entries
+                self.slices[item[0]] = slice(item[1], count)
+        self.slices[()] = slice(0, count)  ## the entry for this dimension
 
     def getSlice(self, *elements):
-        return self.slices[elements]                
+        return self.slices[elements]
 
     def getLevels(self):
         return self.levels
@@ -97,40 +95,39 @@ class DWHSimpleDimension(DWHDimension):
         i = self.levels.index(level) + 1
         return [k[:i] for k in self.slices.keys() if len(k) > 0]
 
-                                
 
 class DWHTimeDimension(DWHDimension):
     def __init__(self, firstday, lastday):  ## firstday, lastday are a tuple (year, month, day)
-                                            ## this dimension contains all days from firstday
-                                            ## up to and including lastday
+        ## this dimension contains all days from firstday
+        ## up to and including lastday
         self.firstday = date(*firstday)
-        self.lastday  = date(*lastday)
-        self.length   = (self.lastday - self.firstday).days + 1
+        self.lastday = date(*lastday)
+        self.length = (self.lastday - self.firstday).days + 1
         super(DWHTimeDimension, self).__init__('time')
-        self.levels   = 'year', 'month', 'day'
-        self.elements = { 'year'  : range(self.firstday.year, self.lastday.year + 1), \
-                          'month' : range(1, 13), \
-                          'day'   : range(1, 32) }
+        self.levels = 'year', 'month', 'day'
+        self.elements = {'year': range(self.firstday.year, self.lastday.year + 1), \
+                         'month': range(1, 13), \
+                         'day': range(1, 32)}
 
-    def interval(self, elements):   ## returns as date the first and the last day 
-                                    ## of the time interval given by elements
+    def interval(self, elements):  ## returns as date the first and the last day
+        ## of the time interval given by elements
 
-        if len(elements) == 0:      ## the whole thing
+        if len(elements) == 0:  ## the whole thing
             return self.firstday, self.lastday
-        elif len(elements) == 1:    ## year is given
-            a = elements + (1,)     ## add first month
-            b = elements + (12,)    ## add last month
+        elif len(elements) == 1:  ## year is given
+            a = elements + (1,)  ## add first month
+            b = elements + (12,)  ## add last month
             return self.interval(a)[0], self.interval(b)[1]
-        elif len(elements) == 2:    ## year, month are given
-            a = elements + (1,)     ## add first day
+        elif len(elements) == 2:  ## year, month are given
+            a = elements + (1,)  ## add first day
             b = elements + (monthrange(*elements)[1],)  ## add last day
             return self.interval(a)[0], self.interval(b)[1]
-        elif len(elements) == 3:    ## year, month and day are given
+        elif len(elements) == 3:  ## year, month and day are given
             d = date(*elements)
             return max(d, self.firstday), min(d, self.lastday)
         else:
             raise TypeError
-        
+
     def getLevels(self):
         return self.levels
 
@@ -139,10 +136,9 @@ class DWHTimeDimension(DWHDimension):
 
     def getSlice(self, *elements):
         iv = self.interval(elements)
-        start = iv[0] - self.firstday   ## number of days to start
-        stop  = iv[1] - self.firstday   ## number of days to stop
+        start = iv[0] - self.firstday  ## number of days to start
+        stop = iv[1] - self.firstday  ## number of days to stop
         return slice(start.days, stop.days + 1)
 
     def __len__(self):
         return self.length
-

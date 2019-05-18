@@ -1,12 +1,11 @@
 # Python Test iterators
 # js, 8.6.04
 
+from itertools import count, repeat
+from operator import add
 from unittest import makeSuite, TestCase, TestSuite, TextTestRunner
 
-from dwhutil import *
 from iterators import *
-from operator import add
-from itertools import count, repeat
 
 sf = ((None, None), (0, 31), (10, 41), (20, None))
 tf = ((None, None), (0, 63), (5, 23), (15, 53), (20, None))
@@ -34,9 +33,8 @@ class TestIterator(TestCase):
         self.failUnlessEqual(sum_all, take(10, fmerge(add, sf, tf, uf, vf, wf, xf)))
         self.failUnlessEqual(max_all, take(10, fmerge(max, sf, tf, uf, vf, wf, xf)))
         self.failUnlessEqual(min_all, take(10, fmerge(min, sf, tf, uf, vf, wf, xf)))
-        
 
-    def testHamming(self):      
+    def testHamming(self):
         h = hamming(3, 5, 7)
         self.failUnlessEqual((1, 3, 5, 7, 9, 15), take(6, h))
 
@@ -69,16 +67,15 @@ class TestIterator(TestCase):
         for i in range(1, 100):
             self.assertAlmostEqual(0.0, next(p))
 
-
     def testMerge(self):
         m = merge((), ())
         self.assertEqual(len(tuple(m)), 0)
         m = merge(range(10), range(20))
         self.assertEqual(sum(m), 235)
-        
+
 
 def suite():
-    suite = TestSuite()    
+    suite = TestSuite()
     suite.addTest(makeSuite(TestIterator))
     return suite
 

@@ -3,9 +3,10 @@
 ## optimization by binary search
 ## js 26.6.04
 
-from fp.util import flip, oo, minusoo
-from operator import and_, or_
 from bisect import bisect_left, bisect_right
+from operator import and_, or_
+
+from fp.util import flip, oo, minusoo
 
 
 def minClosure(bound1, bound2, closed1, closed2, op):
@@ -20,6 +21,7 @@ def minClosure(bound1, bound2, closed1, closed2, op):
     else:
         return bound2, closed2
 
+
 def maxClosure(bound1, bound2, closed1, closed2, op):
     """ liefert
         max(bound1, bound2) und
@@ -32,11 +34,10 @@ def maxClosure(bound1, bound2, closed1, closed2, op):
     elif bound1 == bound2:
         return bound1, op(closed1, closed2)
     else:
-        return bound2, closed2    
+        return bound2, closed2
 
 
-
-class Interval(object):   
+class Interval(object):
     """ Jedes Intervall hat eine linke und eine rechte Grenze.
         Es ist links offen oder abgeschlossen und rechts offen oder abgeschlossen.
         Es ist links beschraenkt oder unbeschraenkt (-oo) und
@@ -53,9 +54,9 @@ class Interval(object):
     """
 
     def __init__(self, leftBound=oo, rightBound=minusoo, leftClosed=True, rightClosed=False):
-        self.leftBound   = leftBound
-        self.leftClosed  = leftClosed            
-        self.rightBound  = rightBound
+        self.leftBound = leftBound
+        self.leftClosed = leftClosed
+        self.rightBound = rightBound
         self.rightClosed = rightClosed
 
         if self.leftBound is -oo:
@@ -63,14 +64,13 @@ class Interval(object):
         if self.rightBound is oo:
             self.rightClosed = False
 
-        if self.leftBound > self.rightBound or                  \
-          (self.leftBound == self.rightBound and                \
-           not (self.leftClosed and self.rightClosed)):    ## empty interval
-            self.leftBound   = oo
-            self.leftClosed  = True
-            self.rightBound  = -oo
+        if self.leftBound > self.rightBound or \
+                (self.leftBound == self.rightBound and \
+                 not (self.leftClosed and self.rightClosed)):  ## empty interval
+            self.leftBound = oo
+            self.leftClosed = True
+            self.rightBound = -oo
             self.rightClosed = True
-        
 
     def closure(self):
         return Interval(self.leftBound, self.rightBound, True, True)
@@ -82,15 +82,15 @@ class Interval(object):
         """ w : interval """
         if not isinstance(w, Interval):
             raise TypeError
-        return self.rightBound == w.leftBound and               \
+        return self.rightBound == w.leftBound and \
                (self.rightClosed or w.leftClosed)
 
-    touches = lambda self, w : self.touchesLeft(w) or w.touchesLeft(self)
+    touches = lambda self, w: self.touchesLeft(w) or w.touchesLeft(self)
     touchesRight = flip(touchesLeft)
 
     def __contains__(self, x):
-        return self.leftBound < x < self.rightBound or          \
-               (self.leftBound  == x and self.leftClosed) or    \
+        return self.leftBound < x < self.rightBound or \
+               (self.leftBound == x and self.leftClosed) or \
                (self.rightBound == x and self.rightClosed)
 
     def __len__(self):
@@ -100,18 +100,17 @@ class Interval(object):
             raise OverflowError
         else:
             return self.rightBound - self.leftBound
-    
 
     def __le__(self, w):
         if not isinstance(w, Interval):
             raise TypeError
 
-        return (w.leftBound < self.leftBound or                 \
-                (w.leftBound == self.leftBound and              \
-                (w.leftClosed or not self.leftClosed))) and     \
-               (self.rightBound < w.rightBound or               \
-                (self.rightBound == w.rightBound and            \
-                (not self.rightClosed or w.rightClosed)))
+        return (w.leftBound < self.leftBound or \
+                (w.leftBound == self.leftBound and \
+                 (w.leftClosed or not self.leftClosed))) and \
+               (self.rightBound < w.rightBound or \
+                (self.rightBound == w.rightBound and \
+                 (not self.rightClosed or w.rightClosed)))
 
     def __eq__(self, w):
         return self <= w and w <= self
@@ -122,22 +121,20 @@ class Interval(object):
     __ge__ = flip(__le__)
     __gt__ = flip(__lt__)
 
-
     def __pos__(self):
         return Intervals(self)
 
     def __neg__(self):
         return -Intervals(self)
 
-
     def __and__(self, w):
         """ w: Interval or Intervals"""
         if isinstance(w, Intervals):
-            return w & self        
-        
-        leftBound, leftClosed   = maxClosure(self.leftBound, w.leftBound,           \
-                                             self.leftClosed, w.leftClosed, and_)
-        rightBound, rightClosed = minClosure(self.rightBound, w.rightBound,         \
+            return w & self
+
+        leftBound, leftClosed = maxClosure(self.leftBound, w.leftBound, \
+                                           self.leftClosed, w.leftClosed, and_)
+        rightBound, rightClosed = minClosure(self.rightBound, w.rightBound, \
                                              self.rightClosed, w.rightClosed, and_)
         return Interval(leftBound, rightBound, leftClosed, rightClosed)
 
@@ -151,7 +148,7 @@ class Interval(object):
 
     def __xor__(self, w):
         """ w may be Interval or Intervals"""
-        return (self|w) - (self&w)
+        return (self | w) - (self & w)
 
     def __nonzero__(self):
         return self.leftBound is not oo
@@ -170,10 +167,10 @@ class Interval(object):
             rightbracket = ')'
         return leftbracket + `self.leftBound` + ', ' + `self.rightBound` + rightbracket
 
-iv = Interval    ## Synonym fuer Interval, z.B.: iv(0, oo)
-iv.emptyInterval = Interval()
-iv.universe      = Interval(-oo, +oo)
 
+iv = Interval  ## Synonym fuer Interval, z.B.: iv(0, oo)
+iv.emptyInterval = Interval()
+iv.universe = Interval(-oo, +oo)
 
 
 class Intervals(list):
@@ -209,48 +206,45 @@ class Intervals(list):
                 self.append(v)
         else:
             raise TypeError
-        
 
     def append(self, w):
         """ non empty intervals are inserted at the correct place """
         if not isinstance(w, Interval):
             raise TypeError
         if not w:
-            return              ## w is empty; nothing to do
+            return  ## w is empty; nothing to do
 
-        ileft  = bisect_left([v.rightBound for v in self], w.leftBound)
+        ileft = bisect_left([v.rightBound for v in self], w.leftBound)
         iright = bisect_right([v.leftBound for v in self], w.rightBound) - 1
 
-##        ts = [(i, v) for (i, v) in enumerate(self) if v&w or v.touches(w)]
-##
-##        if ts:      ## w cuts or touches at least one v in self
-##                    ## ersetze alle v in ts durch ein grosses Intervall
-##            il, vl = ts[0]      ## vl: leftmost interval to be eaten
-##            ir, vr = ts[-1]     ## vr: rightmost interval to be eaten
-        
+        ##        ts = [(i, v) for (i, v) in enumerate(self) if v&w or v.touches(w)]
+        ##
+        ##        if ts:      ## w cuts or touches at least one v in self
+        ##                    ## ersetze alle v in ts durch ein grosses Intervall
+        ##            il, vl = ts[0]      ## vl: leftmost interval to be eaten
+        ##            ir, vr = ts[-1]     ## vr: rightmost interval to be eaten
+
         if ileft <= iright:
             vl = self[ileft]
             vr = self[iright]
-            lb, lc = minClosure(w.leftBound, vl.leftBound,      \
+            lb, lc = minClosure(w.leftBound, vl.leftBound, \
                                 w.leftClosed, vl.leftClosed, or_)
-            rb, rc = maxClosure(w.rightBound, vr.rightBound,    \
+            rb, rc = maxClosure(w.rightBound, vr.rightBound, \
                                 w.rightClosed, vr.rightClosed, or_)
-            
-                                 ## eat all intervals from vl to vr included
-            self[ileft:iright+1] = [Interval(lb, rb, lc, rc)] 
 
-                    ## w cuts or touches no v in self
-        else:       ## i = leftmost interval w with w.rightBound <= v.leftBound
+            ## eat all intervals from vl to vr included
+            self[ileft:iright + 1] = [Interval(lb, rb, lc, rc)]
+
+            ## w cuts or touches no v in self
+        else:  ## i = leftmost interval w with w.rightBound <= v.leftBound
             i = bisect_left([v.leftBound for v in self], w.rightBound)
             list.insert(self, i, w)
 
-
     def closure(self):
-        return Intervals([v.closure() for v in self])        
+        return Intervals([v.closure() for v in self])
 
     def interior(self):
         return Intervals([v.interior() for v in self], True)
-
 
     def __contains__(self, x):
         """ x ist entweder ein Intervall oder irgendwas.
@@ -262,19 +256,18 @@ class Intervals(list):
         if (isinstance(x, Interval)):
             v = x
             x = x.leftBound
-        else:                       ## x is not an interval
+        else:  ## x is not an interval
             v = None
-            
+
         ## i = index of leftmost interval v with x <= v.rightBound
         ## x is contained in the interval self[i] or in none them.
         i = bisect_left([w.rightBound for w in self], x)
         if i >= len(self):
             return false
-        elif v is None:             ## x is not an interval
+        elif v is None:  ## x is not an interval
             return x in self[i]
-        else:                       ## v = x is an interval
+        else:  ## v = x is an interval
             return v <= self[i]
-        
 
     def __pos__(self):
         return self
@@ -285,9 +278,9 @@ class Intervals(list):
         """
 
         result = []
-        wLeftBound  = -oo
+        wLeftBound = -oo
         wLeftClosed = False
-        
+
         for v in self:
             wRightBound = v.leftBound
             wRightClosed = not v.leftClosed
@@ -296,12 +289,11 @@ class Intervals(list):
             wLeftBound = v.rightBound
             wLeftClosed = not v.rightClosed
 
-        wRightBound  = oo
+        wRightBound = oo
         wRightClosed = False
         w = Interval(wLeftBound, wRightBound, wLeftClosed, wRightClosed)
         result.append(w)
         return Intervals(result, True)
-
 
     def __ior__(self, ws):
         """ ws may be Interval or Intervals.
@@ -318,7 +310,6 @@ class Intervals(list):
         result |= ws
         return result
 
-
     def __and__(self, ws):
         """ ws: Interval or Intervals. Cool.
             For each w in ws you construct Intervals [v&w for v in self if v&w]
@@ -330,18 +321,17 @@ class Intervals(list):
         self, ws = coerce(self, ws)
         result = []
         for w in ws:
-            result.extend([v&w for v in self if v&w])   ## bisect!!
+            result.extend([v & w for v in self if v & w])  ## bisect!!
         return Intervals(result, True)
-    
 
     def __sub__(self, ws):
         """ ws: Interval or Intervals. """
         return self & -ws
 
     def __xor__(self, ws):
-        """ ws: Interval or Intervals. """        
-        return (self|ws) - (self&ws)
-    
+        """ ws: Interval or Intervals. """
+        return (self | ws) - (self & ws)
+
     def __le__(self, ws):
         """ ws: Intervals.
             Das Ergebnis ist True, wenn jedes v in self in wenigstens
@@ -353,14 +343,12 @@ class Intervals(list):
             if not v in ws:
                 return False
         return True
-    
+
     def __eq__(self, ws):
         return self <= ws and ws <= self
 
     def __lt__(self, ws):
         return self <= ws and not self == ws
 
-    __ge__   = flip(__le__)
-    __gt__   = flip(__lt__)
-
-    
+    __ge__ = flip(__le__)
+    __gt__ = flip(__lt__)

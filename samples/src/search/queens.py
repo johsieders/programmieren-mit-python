@@ -3,10 +3,9 @@
 ## bubenorbis
 
 from test.test_generators import conjoin
-from test.test_generators import flat_conjoin
 
-from conjoin import simple_conjoin
 from search import SearchProblem
+
 
 def nextPositions(n, state):
     """ liefert die Menge der sicheren Positionen in der naechsten Zeile.
@@ -20,18 +19,18 @@ def nextPositions(n, state):
 
     offlimits = set()
     k = len(state)
-    for i in range(k):              
+    for i in range(k):
         offlimits.add(state[i] - k + i)
         offlimits.add(state[i])
         offlimits.add(state[i] + k - i)
-        
+
     return set(range(n)) - offlimits
 
 
 class QueensProblem(SearchProblem):
     def __init__(self, size):
-        self.__size  = size     ## number of rows
-        self.__state = []       ## state, see nextPositions
+        self.__size = size  ## number of rows
+        self.__state = []  ## state, see nextPositions
 
     def done(self):
         return len(self.__state) == self.__size
@@ -48,7 +47,6 @@ class QueensProblem(SearchProblem):
     def undo(self, step):
         self.__state.pop()
 
-        
 
 def queens_conjoin(n):
     """ liefert alle Loesungen des Damenproblems auf einem nxn-Schachbrett.
@@ -66,9 +64,9 @@ def queens_conjoin(n):
             for x in nextPositions(n, state[:i]):
                 state[i] = x
                 yield x
-                
+
         gs.append(g)
 
-##    return simple_conjoin(gs)
+    ##    return simple_conjoin(gs)
     return conjoin(gs)
-##  return flat_conjoin(gs)    
+##  return flat_conjoin(gs)

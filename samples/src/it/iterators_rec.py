@@ -2,7 +2,6 @@
 ## js 14.8.2004
 ## completely reworked 1/9/2011
 
-from dwhutil import *
 
 def const(c):
     """ recursive generator yielding the constant c
@@ -15,7 +14,6 @@ def const(c):
         yield next(tail)
 
 
-
 def multiply(s, t):
     """ s, t : series on a ring, assuming iter(s), iter(t) work
         multiply returns the product of s and t
@@ -24,18 +22,18 @@ def multiply(s, t):
     """
     s = iter(s)
     t_, t = tee(iter(t))  ## t saved in t_
-    
-    s0 = next(s)          ## now s = tail(s)
-    t0 = next(t)          ## now t = tail(t)
+
+    s0 = next(s)  ## now s = tail(s)
+    t0 = next(t)  ## now t = tail(t)
     yield s0 * t0
-    
+
     tail = (wadd(a, b) for a, b in wzip((s0 * x for x in t), multiply(s, t_)))
     while True:
         yield next(tail)
 
 
-square = lambda t : multiply(*tee(t))
-    
+square = lambda t: multiply(*tee(t))
+
 
 def inverse(s):
     """ s : series on a field;
@@ -45,9 +43,9 @@ def inverse(s):
         postcondition: multiply(s, t) = (1, 0, 0, ...)
     """
     s, s_ = tee(iter(s))  ## s saved in s_
-    
-    s0 = next(s)          ## now s = tail(s)
-    t0 = s0/s0/s0         ## s0/s0 = one
+
+    s0 = next(s)  ## now s = tail(s)
+    t0 = s0 / s0 / s0  ## s0/s0 = one
     yield t0
 
     tail = multiply(s, inverse(s_))
@@ -67,16 +65,16 @@ def merge(*ts):
     """
 
     ts = [iter(t) for t in ts]
-    xs = next(wzip(*ts))          ## StopIteration if all t at end
+    xs = next(wzip(*ts))  ## StopIteration if all t at end
     xs = [x for x in xs if x is not None]
-    m  = min(xs)
+    m = min(xs)
     yield m
-    
+
     for i, x in enumerate(xs):
         if x is m:
             break
-    del xs[i]                     ## remove first occurrence of min 
-        
+    del xs[i]  ## remove first occurrence of min
+
     ts += [[x] for x in xs if x is not None]
     tail = merge(*ts)
     while True:
@@ -89,7 +87,6 @@ def hamming(*ps):
     """
     yield 1
 
-    tail = merge(*[(p*t for t in hamming(*ps)) for p in ps])
+    tail = merge(*[(p * t for t in hamming(*ps)) for p in ps])
     while True:
         yield next(tail)
-

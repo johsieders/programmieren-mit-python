@@ -1,11 +1,13 @@
 ## Klausur 8.7.04
 
 from itertools import count, imap
+
 from search import SearchProblem
 
 ## Aufgabe 1
 ## kurze Loesung
-histogram = lambda m : dict([[k, m.count(k)] for k in m])
+histogram = lambda m: dict([[k, m.count(k)] for k in m])
+
 
 ## lange Loesung
 def histogram1(xs):
@@ -17,21 +19,31 @@ def histogram1(xs):
             result[x] += 1
     return result
 
+
 ## Aufgabe 2
 ## kurze Loesung
-transpose = lambda m : zip(*m)
+transpose = lambda m: zip(*m)
 
 ## lange Loesung
-transpose1 = lambda m : map(None, *m)
+transpose1 = lambda m: map(None, *m)
 
 
 ## Aufgabe 3
 ## a)
 class A(object): pass
+
+
 class B(object): pass
+
+
 class C(A, B): pass
+
+
 class D(B, object): pass
+
+
 class E(C, D): pass
+
 
 ## b)  (mit O = object)
 ## A.mro = AO
@@ -62,6 +74,7 @@ def g7():
         yield current
         current += 7
 
+
 ## b)
 def gf(f):
     current = 1
@@ -69,22 +82,25 @@ def gf(f):
         yield current
         current = f(current)
 
+
 ## c)
 ## kurze Loesung
 gop = imap
+
 
 ## lange Loesung
 def gop1(op, i, j):
     while True:
         yield op(i.next(), j.next())
 
+
 ## d)
 def gq():
     for a in count(1):
-        for b in range(1, a+1):
-            yield a**2 + b**2
+        for b in range(1, a + 1):
+            yield a ** 2 + b ** 2
 
-      
+
 ## Aufgabe 5
 class PermutationProblem(SearchProblem):
     def __init__(self, xs):
@@ -104,10 +120,11 @@ class PermutationProblem(SearchProblem):
         self.__state.append(step)
 
     def undoStep(self, step):
-        self.__state.pop()    
+        self.__state.pop()
+
+    ## Aufgabe 6
 
 
-## Aufgabe 6    
 class talist(list):
     def __init__(self, seq=[]):
         list.__init__(self, seq)
@@ -118,5 +135,5 @@ class talist(list):
 
     def commit(self):
         self.before[:] = self
-        
+
     ## alle anderen Methoden kommen von list

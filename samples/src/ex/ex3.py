@@ -10,27 +10,34 @@
 
 ## define exceptions
 class RomanError(Exception): pass
+
+
 class OutOfRangeError(RomanError): pass
+
+
 class NotIntegerError(RomanError): pass
+
+
 class InvalidRomanNumeralError(RomanError): pass
 
-#Roman numerals must be less than 5000
+
+# Roman numerals must be less than 5000
 MAX_ROMAN_NUMERAL = 4999
 
-#Define digit mapping
-romanNumeralMap = (('M',  1000),
+# Define digit mapping
+romanNumeralMap = (('M', 1000),
                    ('CM', 900),
-                   ('D',  500),
+                   ('D', 500),
                    ('CD', 400),
-                   ('C',  100),
+                   ('C', 100),
                    ('XC', 90),
-                   ('L',  50),
+                   ('L', 50),
                    ('XL', 40),
-                   ('X',  10),
+                   ('X', 10),
                    ('IX', 9),
-                   ('V',  5),
+                   ('V', 5),
                    ('IV', 4),
-                   ('I',  1))
+                   ('I', 1))
 
 # Create tables for fast conversion of roman numerals.
 # toRomanTable[0] = None
@@ -42,8 +49,9 @@ romanNumeralMap = (('M',  1000),
 # toRomanTable[105] = 'CV'    fromRomanTable['CV'] = 105
 # usw.
 
-toRomanTable = [ None ]  # Skip an index since Roman numerals have no zero
+toRomanTable = [None]  # Skip an index since Roman numerals have no zero
 fromRomanTable = {}
+
 
 def toRoman(n):
     """convert integer to Roman numeral"""
@@ -53,6 +61,7 @@ def toRoman(n):
         raise NotIntegerError("decimals can not be converted")
     return toRomanTable[n]
 
+
 def fromRoman(s):
     """convert Roman numeral to integer"""
     if not s:
@@ -60,6 +69,7 @@ def fromRoman(s):
     if s not in fromRomanTable:
         raise InvalidRomanNumeralError('Invalid Roman numeral: %s' % s)
     return fromRomanTable[s]
+
 
 def toRomanDynamic(n):
     """convert integer to Roman numeral using dynamic programming
@@ -73,18 +83,20 @@ def toRomanDynamic(n):
         if n >= i:
             result = num
             n -= i
-            break  
+            break
     if n > 0:
         result += toRomanTable[n]
-        
+
     return result
+
 
 def fillLookupTables():
     """compute all the possible roman numerals"""
-    #Save the values in two global tables to convert to and from integers.
+    # Save the values in two global tables to convert to and from integers.
     for integer in range(1, MAX_ROMAN_NUMERAL + 1):
         romanNumber = toRomanDynamic(integer)
         toRomanTable.append(romanNumber)
         fromRomanTable[romanNumber] = integer
-    
+
+
 fillLookupTables()

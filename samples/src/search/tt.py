@@ -3,6 +3,6 @@
 
 
 def intersect(iv, jv):
-    print 'aa'
+    print
+    'aa'
     return max(iv[0], jv[0]), min(iv[1], jv[1])
-

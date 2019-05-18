@@ -4,11 +4,12 @@
 def abstract():
     raise NotImplementedError
 
+
 ## Java-like interface
 class SearchProblem(object):
     def __init__(self):
         abstract()
-    
+
     def done(self):
         abstract()
 
@@ -47,7 +48,7 @@ class SearchByClass(object):
 ## search by function
 def searchByFunction(problem):
     if problem.done():
-        return[problem.getState()]
+        return [problem.getState()]
 
     result = []
     for option in problem:
@@ -55,7 +56,6 @@ def searchByFunction(problem):
         result += searchByFunction(problem)
         problem.undo(option)
     return result
-
 
 
 ## search by generator
@@ -70,13 +70,12 @@ def searchByGenerator(problem):
         problem.undo(option)
 
 
-
 ## permutations as a hello-world search problem
 class PermutationProblem(SearchProblem):
     def __init__(self, xs):
         self.__xs = set(xs)
         self.__state = []
-        
+
     def getState(self):
         return list(self.__state)
 
@@ -91,6 +90,6 @@ class PermutationProblem(SearchProblem):
 
     def done(self):
         return len(self.__state) == len(self.__xs)
-        
+
+
 pp = PermutationProblem
-    

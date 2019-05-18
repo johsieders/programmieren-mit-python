@@ -6,6 +6,7 @@
 from bisect import bisect_right
 from itertools import izip
 
+
 def multiply(s, t):
     """ s, t : series on a ring, assuming iter(s), iter(t) work
         multiply returns the product of s and t
@@ -13,34 +14,34 @@ def multiply(s, t):
         works fine with finite series (i.e. polynoms) and infinite ones.
     """
     s, t = iter(s), iter(t)
-    xs, xt = [], []          ## store elements read from s and t
-    k = 0                    ## count yielded elements
-    
-    while True:    
+    xs, xt = [], []  ## store elements read from s and t
+    k = 0  ## count yielded elements
+
+    while True:
         try:
             xs.append(next(s))
-        except StopIteration: 
+        except StopIteration:
             pass
         try:
             xt.append(next(t))
-        except StopIteration: 
+        except StopIteration:
             pass
-        
-        x = None                    ## start without using 0
-        lb = max((0, k-len(xt)+1))  ## stay within rectangle 
-        ub = min((k+1, len(xs)))    
+
+        x = None  ## start without using 0
+        lb = max((0, k - len(xt) + 1))  ## stay within rectangle
+        ub = min((k + 1, len(xs)))
         for i in range(lb, ub):
-            if x is None:    
-                x = xs[i] * xt[k-i]
+            if x is None:
+                x = xs[i] * xt[k - i]
             else:
-                x += xs[i] * xt[k-i]
-                
+                x += xs[i] * xt[k - i]
+
         if x is None:
             raise StopIteration
         else:
-            k += 1           ## that many elements yielded
+            k += 1  ## that many elements yielded
             yield x
-       
+
     ## This code does basically this:
     ## 
     ## x = 0
@@ -52,9 +53,9 @@ def multiply(s, t):
     ## describe the rectangle of indices to be considered.
 
 
-square = lambda s : multiply(*tee(s))
+square = lambda s: multiply(*tee(s))
 
-            
+
 def inverse(s):
     """ s : series on a field;
         if len(s) == 0: StopIteration at fist call of next
@@ -62,15 +63,15 @@ def inverse(s):
         returns the inverse t of s
         postcondition: multiply(s, t) = (1, 0, 0, ...)
     """
-    s = iter(s)            ## the iterator to be inverted
+    s = iter(s)  ## the iterator to be inverted
     xs, xt = [], []
-    
-    x = next(s)            ## may raise StopIteration
-    one  = x/x             ## there is no 1
-    zero = x - x           ## there is no 0
-    
-    xs.append(x)           ## read part of s
-    xt.append(one/x)       ## coefficients of t=1/s
+
+    x = next(s)  ## may raise StopIteration
+    one = x / x  ## there is no 1
+    zero = x - x  ## there is no 0
+
+    xs.append(x)  ## read part of s
+    xt.append(one / x)  ## coefficients of t=1/s
     yield xt[-1]
 
     while True:
@@ -78,13 +79,13 @@ def inverse(s):
             xs.append(next(s))
         except StopIteration:
             xs.append(zero)
-            
+
         y = zero
         for (i, x) in enumerate(xt):
-            y += x * xs[-i-1]
-        
+            y += x * xs[-i - 1]
+
         xt.append(-y * xt[0])
-        yield xt[-1]    
+        yield xt[-1]
 
 
 def divide(s, t):
@@ -97,29 +98,29 @@ def merge(*ts):
         This is a weak merge: It stops only
         when the longest iterator is exhausted        
     """
-    
+
     ts = [iter(t) for t in ts]
-    head = {}.fromkeys(ts)                  ## dictionary of last read entries
+    head = {}.fromkeys(ts)  ## dictionary of last read entries
 
     while True:
         for t in ts:
             if head[t] is None:
                 try:
-                    head[t] = (next(t),)    ## replace Nones
+                    head[t] = (next(t),)  ## replace Nones
                 except StopIteration:
-                    pass               
+                    pass
 
         hs = [h[0] for h in head.itervalues() if h]
         if hs:
             m = min(hs)
-        else:                               ## all ts are done
+        else:  ## all ts are done
             raise StopIteration
 
         for t in ts:
-            if head[t] and head[t][0] == m: ## remove used t
-                head[t] = None              ## but only once to keep duplicates                
+            if head[t] and head[t][0] == m:  ## remove used t
+                head[t] = None  ## but only once to keep duplicates
                 break
-            
+
         yield m
 
 
@@ -132,12 +133,11 @@ def hamming(*ps):
         Then append min{p*x | x in q, p in ps, p*x > max(q)} to q.
         The next number to be produced is min(q)
     """
-    q = [1]         ## q contains all numbers produced so far
+    q = [1]  ## q contains all numbers produced so far
     while True:
         yield q[-1]
         mq = max(q)
-        q.append(min([p*x for p in ps for x in q if p*x > mq]))
-
+        q.append(min([p * x for p in ps for x in q if p * x > mq]))
 
 
 def fmerge(op, *fs):
@@ -145,41 +145,42 @@ def fmerge(op, *fs):
         returns a new step function F stepping at each step of any input function
         defined by F(x) = fun(*fs(x))
     """
+
     def weak(xs):
-        ys = [x for x in xs if x is not None]        
+        ys = [x for x in xs if x is not None]
         return reduce(op, ys) if ys else None
 
     fs = [iter(f) for f in fs]
-    
-    head = {}.fromkeys(fs)          ## dictionary of last read entries, key = f
-    val  = {}.fromkeys(fs)          ## dictionary of current value at f   
-    lastval = fs                    ## any value not occurring in one of the f 
 
-    while True:        
-        for f in fs:                ## fill heads by reading next (step, value)
+    head = {}.fromkeys(fs)  ## dictionary of last read entries, key = f
+    val = {}.fromkeys(fs)  ## dictionary of current value at f
+    lastval = fs  ## any value not occurring in one of the f
+
+    while True:
+        for f in fs:  ## fill heads by reading next (step, value)
             if head[f] is None:
                 try:
                     head[f] = next(f)
                 except StopIteration:
                     pass
 
-        hs = [h[0] for h in head.itervalues() if h] 
-        if hs:                      ## determine m = next step 
-            m = min(hs)       
-        else:                       ## stop if all f are done
+        hs = [h[0] for h in head.itervalues() if h]
+        if hs:  ## determine m = next step
+            m = min(hs)
+        else:  ## stop if all f are done
             raise StopIteration
 
-        for f in fs:                ## update values
-            if head[f] and head[f][0] == m:                
-                val[f]  = head[f][1]
-                head[f] = None             
+        for f in fs:  ## update values
+            if head[f] and head[f][0] == m:
+                val[f] = head[f][1]
+                head[f] = None
 
         v = weak(val.itervalues())
-        if v != lastval:            ## check if value has changed
+        if v != lastval:  ## check if value has changed
             lastval = v
             yield m, v
-        
-                
+
+
 class stepfun:
     """ step functions are stepwise constant. They are given by a list
         (step, value). Step functions are assumed to be right-continuous.
@@ -193,27 +194,20 @@ class stepfun:
 
         __call__(x) returns the function value at x
     """
-    
+
     def __init__(self, sf):
         self.steps = []
         self.values = []
         for s, v in iter(sf):
             self.steps.append(s)
             self.values.append(v)
-            
 
-    def __call__(self, x):   
+    def __call__(self, x):
         i = bisect_right(self.steps, x) - 1
         return self.values[i]
-
 
     def __iter__(self):
         return izip(self.steps, self.values)
 
     def fmerge(self, fs):
         return fmerge(self, fs)
-
-        
-        
-
-    

@@ -10,6 +10,7 @@
 from itertools import imap, repeat
 from operator import add
 
+
 # Python implementation of imap
 def jmap(function, *iterables):
     iterables = map(iter, iterables)
@@ -20,17 +21,20 @@ def jmap(function, *iterables):
         else:
             yield function(*args)
 
+
 class c8:
     def next(self):
         return 8
+
     def __iter__(self):
-        print 'start c8'
+        print
+        'start c8'
         return self
 
 
 ## imap and jmap differ
-ix = imap(add, repeat(3), c8())     ## start c8
-jx = jmap(add, repeat(3), c8())     ## silent
+ix = imap(add, repeat(3), c8())  ## start c8
+jx = jmap(add, repeat(3), c8())  ## silent
 
 
 #########################################################
@@ -46,5 +50,6 @@ def delay(it):
 def kmap(function, *iterables):
     return delay(lambda f=function, its=iterables: imap(f, *its))
 
+
 ## imap and jmap differ on c8
-kx = kmap(add, repeat(3), c8())     ## silent
+kx = kmap(add, repeat(3), c8())  ## silent

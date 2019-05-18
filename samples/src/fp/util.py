@@ -17,27 +17,28 @@ def flip(f):
     return lambda x, y: f(y, x)
 
 
-def compose(f, g):          # composes f and g
+def compose(f, g):  # composes f and g
     return lambda *x: f(g(*x))
 
 
-def binary2nary(f):         # converts s binary function f into an nary one
+def binary2nary(f):  # converts s binary function f into an nary one
     return lambda *args: reduce(f, args)
 
 
-def negate(p):              # negates p
+def negate(p):  # negates p
     return lambda x: not p(x)
 
 
-def unaryAnd(p, q):         # returns p and q
-    return lambda x : p(x) and q(x)
+def unaryAnd(p, q):  # returns p and q
+    return lambda x: p(x) and q(x)
 
 
-def unaryAr(p, q):         # returns p and q
-    return lambda x : p(x) or q(x)
+def unaryOr(p, q):  # returns p and q
+    return lambda x: p(x) or q(x)
 
 
 def odd(n):
     return n % 2
+
 
 even = negate(odd)

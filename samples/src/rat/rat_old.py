@@ -4,6 +4,7 @@
 
 from mathutil import flip, gcd
 
+
 class Rational(object):
     """
     rational numbers defined on any euclidian ring
@@ -22,23 +23,23 @@ class Rational(object):
     def __init__(self, first, second, \
                  zero=None, one=None, generation=Rational.THRESHOLD):
         if isinstance(first, Rational) or isinstance(second, Rational):
-            q = first/second   ## loop bei __div__ !!
+            q = first / second  ## loop bei __div__ !!
             assert isinstance(q, Rational)
-            self.__numerator   = q.__numerator
+            self.__numerator = q.__numerator
             self.__denominator = q.__denominator
         else:
-            self.__numerator   = first
+            self.__numerator = first
             self.__denominator = second
-        self.__generation  = generation - 1
+        self.__generation = generation - 1
         if zero is not None:
-            self.__zero = zero 
+            self.__zero = zero
         else:
             self.__zero = self.__denominator - self.__denominator
         if one is not None:
             self.__one = one
         else:
             self.__one = self.__denominator / self.__denominator
-        if self.__generation  < 0:
+        if self.__generation < 0:
             self.norm()
 
     def __coerce__(self, x):
@@ -54,11 +55,11 @@ class Rational(object):
 
     def norm(self):
         if self.__denominator < self.__zero:
-            self.__numerator   = -self.__numerator
+            self.__numerator = -self.__numerator
             self.__denominator = -self.__denominator
         g = gcd(self.__numerator, self.__denominator)
         if g != self.__one:
-            self.__numerator   /= g
+            self.__numerator /= g
             self.__denominator /= g
         self.__generation = _THRESHOLD
 
@@ -67,13 +68,13 @@ class Rational(object):
 
     def __call__(self, x):
         return Rational(self.__numerator(x), self.__denominator(x))
-    
+
     def __float__(self):
-        return float(self.__numerator)/float(self.__denominator)
+        return float(self.__numerator) / float(self.__denominator)
 
     def __int__(self):
         return int(float(self))
-        
+
     def __long__(self):
         return long(float(self))
 
@@ -84,11 +85,11 @@ class Rational(object):
     def __neg__(self):
         return Rational(-self.__numerator, self.__denominator, \
                         self.__zero, self.__one, self.__generation)
-        
+
     def __pos__(self):
         return Rational(self.__numerator, self.__denominator, \
                         self.__zero, self.__one, self.__generation)
-            
+
     def __invert__(self):
         return Rational(self.__denominator, self.__numerator, \
                         self.__zero, self.__one, self.__generation)
@@ -99,7 +100,7 @@ class Rational(object):
 
     def __add__(self, r):
         s, t = coerce(self, r)
-        num   = self.__numerator * t.__denominator + self.__denominator * t.__numerator
+        num = self.__numerator * t.__denominator + self.__denominator * t.__numerator
         denom = self.__denominator * t.__denominator
         return Rational(num, denom, self.__zero, self.__one, self.__generation)
 
@@ -108,10 +109,10 @@ class Rational(object):
 
     def __mul__(self, r):
         s, t = coerce(self, r)
-        num   = self.__numerator * t.__numerator
+        num = self.__numerator * t.__numerator
         denom = self.__denominator * t.__denominator
         return Rational(num, denom, self.__zero, self.__one, self.__generation)
-    
+
     def __div__(self, r):
         return self * ~r
 
@@ -121,12 +122,12 @@ class Rational(object):
     def __cmp__(self, r):
         s, t = coerce(self, r)
         return cmp(self.__numerator * t.__denominator - \
-               self.__denominator * t.__numerator, self.__zero)
+                   self.__denominator * t.__numerator, self.__zero)
 
     # make operators with reversed operands
     __radd__, __rmul__ = __add__, __mul__
 
-    __rsub__, __rdiv__, __rmod__, __rcmp__=   \
-    [flip(m) for m in [__sub__, __div__, __mod__, __cmp__]]
+    __rsub__, __rdiv__, __rmod__, __rcmp__ = \
+        [flip(m) for m in [__sub__, __div__, __mod__, __cmp__]]
 
-    ## end of class Rational 
+    ## end of class Rational

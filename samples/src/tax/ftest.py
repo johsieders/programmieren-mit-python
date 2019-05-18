@@ -1,122 +1,108 @@
 ## taxes
 ## js 12-30-2010
-    
+
 from collections import OrderedDict
+
 
 class TaxDict(OrderedDict):
     def __init__(self):
         super().__init__(self)
         self.gradient = None
-        self.bottom = 16010         ## erster Wert der Steuertabelle
-        self.top    = 630046        ## letzter Wert der Steuertabelle
-        self.dist   = 1000          ## Genauigkeit des Gradienten
-        
+        self.bottom = 16010  ## erster Wert der Steuertabelle
+        self.top = 630046  ## letzter Wert der Steuertabelle
+        self.dist = 1000  ## Genauigkeit des Gradienten
+
     def getGradient(self):
         if self.gradient is None:
-            self.gradient = (super().__getitem__(self.top) -       \
-                             super().__getitem__(self.top  -       \
+            self.gradient = (super().__getitem__(self.top) - \
+                             super().__getitem__(self.top - \
                                                  self.dist)) / self.dist
         return self.gradient
-        
+
     def __getitem__(self, n):
         n = round(n)
         if n < 0:
             raise ValueError
-        
+
         if n < self.bottom:
             return 0
-            
+
         if n > self.top:
             return self[self.top] + round((n - self.top) * self.getGradient())
-        
-        for k in range(n, n+4):
+
+        for k in range(n, n + 4):
             if k in self:
                 return round(super().__getitem__(k))
-            
-        raise KeyError        ## never get here
-        
+
+        raise KeyError  ## never get here
+
 
 def taxDict(taxfile):
     result = TaxDict()
     lines = open(taxfile)
     n = 0
-    
+
     for line in lines:
         s = line.split()
         if len(s) != 1:
             continue
-        
+
         y = s[0].replace('.', '')
         y = y.replace(',', '')
         try:
             z = int(y)
         except ValueError:
             continue
-      
 
-
-
-	  
-        if n == 0:       ## new entry
+        if n == 0:  ## new entry
             ek = z
             n = 1
         elif n == 1:
-            tax = z      ## get tax
+            tax = z  ## get tax
             ## print('tax', tax)
             n = 2
-        elif n == 2:     ## get soli
-            soli = z/100
+        elif n == 2:  ## get soli
+            soli = z / 100
             result[ek] = tax + soli
             n = 0
-            
+
     return result
 
 
 def futureValue_(auszahlungen, zinssaetze, entnahmen, einkommen, \
                  steuertabelle):
     n = len(auszahlungen)
-    assert(n > 0)
-    assert(len(zinssaetze) == n)
-    assert(len(entnahmen)  == n)
-    
+    assert (n > 0)
+    assert (len(zinssaetze) == n)
+    assert (len(entnahmen) == n)
+
     a = auszahlungen
     e = entnahmen
     k = einkommen
     t = steuertabelle
-    
-    z = n * [None]        ## z[i] = Zinsfaktor in Periode i
+
+    z = n * [None]  ## z[i] = Zinsfaktor in Periode i
     z[0] = 1
     for i in range(1, n):
-        z[i] = (1+zinssaetze[i])*z[i-1]
-        
-    w = n * [None]        ## w[i] = zusaetzliche Steuern bei Einkommen k 
-                          ## und Auszahlung a
+        z[i] = (1 + zinssaetze[i]) * z[i - 1]
+
+    w = n * [None]  ## w[i] = zusaetzliche Steuern bei Einkommen k
+    ## und Auszahlung a
     for i in range(0, n):
         w[i] = t[a[i] + k[i]] - t[k[i]]
-    
-    return round(sum([(a[i] - w[i]) * z[n-i-1] for i in range(0, n)]))
+
+    return round(sum([(a[i] - w[i]) * z[n - i - 1] for i in range(0, n)]))
 
 
 def futureValue(gesamt, n, k, zinssatz, einkommen, steuertabelle):
     ## Auszahlung in k Teilen ( 1 <= k <= n)
     ## Laufzeit n Jahre
-    auszahlungen = k * [gesamt/k] + (n-k) * [0]
-    zinssaetze   = n * [zinssatz]
-    entnahmen    = n * [0]
-    einkommen    = n * [einkommen]
+    auszahlungen = k * [gesamt / k] + (n - k) * [0]
+    zinssaetze = n * [zinssatz]
+    entnahmen = n * [0]
+    einkommen = n * [einkommen]
     return futureValue_(auszahlungen, zinssaetze, entnahmen, einkommen, \
-                        steuertabelle)               
-
-
-						
-						
-						
-						
-						
-						
-						
-						
-						
+                        steuertabelle)
 
 
 taxfile = 'splitt_ohne_kist.txt'

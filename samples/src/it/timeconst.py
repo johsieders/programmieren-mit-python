@@ -6,11 +6,13 @@ from timeit import *
 if __name__ == '__main__':
     print
     print
-    
+
     t = Timer('take(100, const(8))', 'from iterators import const; from it.util import take')
     result = t.repeat(3, 100)
-    print 'standard iterator:  100 * take(100, const(8)) : ', result
+    print
+    'standard iterator:  100 * take(100, const(8)) : ', result
 
     t = Timer('take(100, const(8))', 'from iterators_rec import const; from it.util import take')
     result = t.repeat(3, 100)
-    print 'recursive iterator: 100 * take(100, const(8)) : ', result
+    print
+    'recursive iterator: 100 * take(100, const(8)) : ', result

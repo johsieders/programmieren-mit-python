@@ -40,7 +40,7 @@ def index2(book, keywords):
 
 
 def anagram_sorted(xs):
-    return sorted(xs, key = lambda x: sorted(x))
+    return sorted(xs, key=lambda x: sorted(x))
 
 
 #######################
@@ -48,12 +48,13 @@ def anagram_sorted(xs):
 #######################
 
 from fp.util import unaryAnd, unaryOr, negate
-        
+
+
 def translate(formula, namespace):
     """ translate a postfix-formula into an executable predicate
     operators are AND, OR, NOT
     namespace contains predicates """
-        
+
     stack = []
     for token in formula.split():
         if token == "AND":
@@ -71,5 +72,3 @@ def translate(formula, namespace):
             stack.append(namespace[token])
     assert len(stack) == 1, 'bad formula'
     return stack.pop()
-
-

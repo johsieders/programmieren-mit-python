@@ -1,8 +1,9 @@
 ## str8ts
 ## js 3.4.2010
 
-from search import SearchProblem, searchByFunction, searchByGenerator
 from types import StringType
+
+from search import SearchProblem, searchByFunction, searchByGenerator
 
 blank = ' '
 size = 9
@@ -12,11 +13,12 @@ class Str8(object):
     """ inner class of Str8tsProblem
         describes a straight
     """
+
     def __init__(self, row, col, len, s8):
-        self.row = row          ## start
-        self.col = col          ## start
-        self.len = len          ## length
-        self.tab = s8.tab       ## enclosing Str8tsProblem
+        self.row = row  ## start
+        self.col = col  ## start
+        self.len = len  ## length
+        self.tab = s8.tab  ## enclosing Str8tsProblem
 
     def orientation(self):
         raise NotImplementedError
@@ -26,25 +28,25 @@ class Str8(object):
 
     def isempty(self):
         """ Returns true if no field is set """
-        return  max(self.values()) == 0
+        return max(self.values()) == 0
 
     def min(self):
         if self.isempty():
             return 10
         else:
-            return min([x for x in self.values() if x > 0]) 
-                                   
+            return min([x for x in self.values() if x > 0])
+
     def max(self):
         if self.isempty():
             return 0
         else:
-            return max([x for x in self.values() if x > 0]) 
-    
+            return max([x for x in self.values() if x > 0])
+
     def __len__(self):
         return self.len
 
     def __repr__(self):
-        return str(self.row) + blank + str(self.col) + blank +   \
+        return str(self.row) + blank + str(self.col) + blank + \
                str(self.len) + blank + str(self.orientation())
 
     def rawconstraints(self):
@@ -57,9 +59,8 @@ class Str8(object):
         """
         result = self.rawconstraints()
         result.sort()
-        result.append(size+1)
+        result.append(size + 1)
         return result
-
 
     def options(self):
         """ Returns the set of all feasible numbers for self """
@@ -68,18 +69,18 @@ class Str8(object):
             result = set()
             for x in self.constraints():
                 if x - last > self.len:
-                    result |= set(range(last+1, x))
+                    result |= set(range(last + 1, x))
                 last = x
             return result
-        
-        else:       ## not empty 
+
+        else:  ## not empty
             last = 0
-            low  = self.max() - self.len + 1
+            low = self.max() - self.len + 1
             high = self.min() + self.len
-            y    = self.max()
+            y = self.max()
             for x in self.constraints():
-                if last < y < x:            ## occurs exactly once
-                    return set(range(max(low, last+1), min(high, x)))
+                if last < y < x:  ## occurs exactly once
+                    return set(range(max(low, last + 1), min(high, x)))
                 else:
                     last = x
 
@@ -89,14 +90,14 @@ class Hor8(Str8):
         return 'h'
 
     def values(self):
-        return self.tab[self.row][self.col : self.col + self.len]
+        return self.tab[self.row][self.col: self.col + self.len]
 
     def rawconstraints(self):
         """ Returns all numbers on this row not in self. """
         tmp = range(0, self.col)
         tmp.extend(range(self.col + self.len, size))
-        return [abs(self.tab[self.row][j]) for j in tmp  \
-                 if self.tab[self.row][j] not in (0, -size-1)]
+        return [abs(self.tab[self.row][j]) for j in tmp \
+                if self.tab[self.row][j] not in (0, -size - 1)]
 
 
 class Ver8(Str8):
@@ -111,7 +112,8 @@ class Ver8(Str8):
         tmp = range(0, self.row)
         tmp.extend(range(self.row + self.len, size))
         return [abs(self.tab[i][self.col]) for i in tmp \
-                 if self.tab[i][self.col] not in (0, -size-1)]
+                if self.tab[i][self.col] not in (0, -size - 1)]
+
 
 def parse(s):
     """ read problem from text
@@ -126,14 +128,14 @@ def parse(s):
     for line in str.splitlines(s)[1:]:
         row = []
         for c in str.split(line):
-            if len(c) == 1 and c[0] == '-':     ## empty white field
+            if len(c) == 1 and c[0] == '-':  ## empty white field
                 row.append(0)
-            elif len(c) == 1 and c[0] == 'x':   ## empty black field
+            elif len(c) == 1 and c[0] == 'x':  ## empty black field
                 row.append(-10)
-            elif len(c) == 1:                   ## white digit
+            elif len(c) == 1:  ## white digit
                 row.append(int(c[0]))
-            elif len(c) == 2 and c[0] == 'x':   ## black digit
-                row.append(-int(c[1]))        
+            elif len(c) == 2 and c[0] == 'x':  ## black digit
+                row.append(-int(c[1]))
             else:
                 raise TypeError
         result.append(row)
@@ -143,9 +145,9 @@ def parse(s):
 class Str8tsProblem(SearchProblem):
     def __init__(self, input):
         ## static data
-        self.rows      = range(size)
-        self.columns   = range(size)
-        self.numbers   = frozenset(range(1, size+1))
+        self.rows = range(size)
+        self.columns = range(size)
+        self.numbers = frozenset(range(1, size + 1))
         self.positions = [(i, j) for i in range(size) for j in range(size)]
 
         if type(input) is Str8tsProblem:
@@ -160,14 +162,14 @@ class Str8tsProblem(SearchProblem):
         self.ver8byCol = self.makeVer8byCol()  ## all ver8 on col j
 
         ## data updated at each step
-        self.options   = [[None for i in self.rows] for j in self.columns]
+        self.options = [[None for i in self.rows] for j in self.columns]
         self.updateOptions()
-        self.history   = '\n'
+        self.history = '\n'
 
-    def row(self, i):                   ## 0 <= i <= 8
+    def row(self, i):  ## 0 <= i <= 8
         return set([abs(self.tab[i][j]) for j in range(size)])
 
-    def col(self, j):                   ## 0 <= j <= 8
+    def col(self, j):  ## 0 <= j <= 8
         return set([abs(self.tab[i][j]) for i in range(size)])
 
     def makeHor8byRow(self):
@@ -180,13 +182,13 @@ class Str8tsProblem(SearchProblem):
                 if not inside and self.tab[i][j] >= 0:  ## start of h
                     h = Hor8(i, j, 0, self)
                     inside = True
-                elif inside and self.tab[i][j] < 0:     ## end of h
-                    h.len = j - h.col                   ## length of h
+                elif inside and self.tab[i][j] < 0:  ## end of h
+                    h.len = j - h.col  ## length of h
                     result[i].append(h)
                     inside = False
                 else:
                     pass
-            if inside:              ## close last straight on this row
+            if inside:  ## close last straight on this row
                 h.len = size - h.col
                 result[i].append(h)
         return result
@@ -201,21 +203,19 @@ class Str8tsProblem(SearchProblem):
                 if not inside and self.tab[i][j] >= 0:  ## start of v
                     v = Ver8(i, j, 0, self)
                     inside = True
-                elif inside and self.tab[i][j] < 0:     ## end of v
-                    v.len = i - v.row                   ## length of v
+                elif inside and self.tab[i][j] < 0:  ## end of v
+                    v.len = i - v.row  ## length of v
                     result[j].append(v)
                     inside = False
                 else:
                     pass
-            if inside:              ## close last straight on this column
+            if inside:  ## close last straight on this column
                 v.len = size - v.row
                 result[j].append(v)
         return result
 
-
-    def done(self):                     ## done iff no zeros left
+    def done(self):  ## done iff no zeros left
         return all([self.tab[i][j] != 0 for (i, j) in self.positions])
-
 
     def updateOptions(self):
         """ intersect three restrictions:
@@ -238,7 +238,6 @@ class Str8tsProblem(SearchProblem):
                 ops = v.options()
                 for i in range(v.row, v.row + v.len):
                     self.options[i][j] &= ops
- 
 
     def __iter__(self):
         """ find an empty field offering the least number of options.
@@ -248,17 +247,16 @@ class Str8tsProblem(SearchProblem):
         """
         if self.done():
             return iter([])
-        
+
         i, j, options = min([(i, j, self.options[i][j]) \
                              for i, j in self.positions if self.tab[i][j] == 0], \
-                             key = lambda t : len(t[2]))
+                            key=lambda t: len(t[2]))
         if len(options) == 0:
             self.history += '\ndead end at ' + str((i, j))
             return iter([])
         else:
-            self.history += '\ntrying ' + str(options) + ' at ' + str((i,j))
+            self.history += '\ntrying ' + str(options) + ' at ' + str((i, j))
             return iter([(i, j, n) for n in options])
-
 
     def getState(self):
         state = Str8tsProblem(self)
@@ -267,26 +265,25 @@ class Str8tsProblem(SearchProblem):
 
     def do(self, step):
         i, j, n = step
-        self.tab[i][j] = n                  ## set n at (i, j)
+        self.tab[i][j] = n  ## set n at (i, j)
         self.updateOptions()
 
     def undo(self, step):
         i, j, n = step
-        self.tab[i][j] = 0                  ## clear (i, j)
-
+        self.tab[i][j] = 0  ## clear (i, j)
 
     def __repr__(self):
         s = ""
         for i in self.rows:
             for j in self.columns:
                 n = self.tab[i][j]
-                if n == -10:                ## empty black field
-                    s += 'x  '              
-                elif n < 0:                 ## black digit
+                if n == -10:  ## empty black field
+                    s += 'x  '
+                elif n < 0:  ## black digit
                     s = s + 'x' + str(-n) + ' '
-                elif n == 0:                ## empty white field
+                elif n == 0:  ## empty white field
                     s = s + '-  '
-                elif 0 < n < 10:            ## white digit
+                elif 0 < n < 10:  ## white digit
                     s = s + str(n) + '  '
                 else:
                     raise Exception
@@ -297,19 +294,17 @@ class Str8tsProblem(SearchProblem):
         return self.history.count('\n')
 
 
-
-
-
-
 ## Shorthands
 def solveByFunction(p):
     """solves the Str8tsProblem given by p"""
     return searchByFunction(Str8tsProblem(p))
 
+
 def solveByGenerator(p):
     """solves the Str8tsProblem given by p"""
     return searchByGenerator(Str8tsProblem(p))
 
+
 sf = solveByFunction
 sg = solveByGenerator
-S8 = Str8tsProblem          
+S8 = Str8tsProblem

@@ -1,23 +1,24 @@
 # GUI fuer Solitaer
 # js 29.12.02
 
-from soli_old import *
 from Tkinter import *
 
+from soli_old import *
+
 # Buttons enthaelt alle Buttons als Matrix
-Buttons = map(list, 7*[7*[None]])
+Buttons = map(list, 7 * [7 * [None]])
 
 # Liste der moeglichen Startpunkte
 Starts = []
 
-On       = "gray"           # da steht ein Stein
-Off      = "white"          # da steht keiner
-Start    = "blue"           # alle Steine, die springen koennen
-Selected = "yellow"         # der gewaehlte Start
-End      = "green"          # alle Endpunkte ausgehend von Start
+On = "gray"  # da steht ein Stein
+Off = "white"  # da steht keiner
+Start = "blue"  # alle Steine, die springen koennen
+Selected = "yellow"  # der gewaehlte Start
+End = "green"  # alle Endpunkte ausgehend von Start
 Colours = (Off, On, Start, Selected, End)
 
-cnt = 0 # Count-Label
+cnt = 0  # Count-Label
 
 # die gewaehlte Stelle, von der aus gesprungen wird
 # es gilt: SelectedStart in Sources oder SelectedStart is None
@@ -25,6 +26,7 @@ SelectedStart = None
 
 # Liste der moeglichen Endpunkte ausgehend von SelectedStart
 Ends = []
+
 
 # Das Spiel befindet sich immer in einem von zwei Zustaenden
 # ZUSTAND A: Kein Startpunkt gewaehlt (SelectedStart is None)
@@ -58,7 +60,7 @@ def adjustButtonsForA():
 def adjustButtonsForB():
     """ Startpunkt selektiert, Ends != [] """
     assert SelectedStart and Ends  # Zustand B
-    
+
     for b in Starts:
         b.config(state=DISABLED, bg=On)
     for b in Ends:
@@ -69,17 +71,19 @@ def adjustButtonsForB():
 def onClick(x, y):
     def tmp():
         global Starts, SelectedStart, Ends
-        if not SelectedStart:       # im Zustand A
+        if not SelectedStart:  # im Zustand A
             SelectedStart = (x, y, Buttons[x][y])
             Ends = [Buttons[u][v] for (u, v) in getEnds(x, y)]
-            adjustButtonsForB()     # Zustand B herbeifuehren
-        else:                       # im Zustand B
+            adjustButtonsForB()  # Zustand B herbeifuehren
+        else:  # im Zustand B
             move(SelectedStart[:2], (x, y))
             Starts = []
             SelectedStart = None
             Ends = []
-            adjustButtonsForA()    # Zustand A herbeifuehren
-        print x, y
+            adjustButtonsForA()  # Zustand A herbeifuehren
+        print
+        x, y
+
     return tmp
 
 
@@ -121,6 +125,6 @@ def makeView(root):
 
 if __name__ == "__main__":
     root = Tk()
-    root.title("Solitär")
+    root.title("Solitï¿½r")
     makeView(root)
     root.mainloop()

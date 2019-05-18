@@ -24,7 +24,3 @@ def setbykeys(dict, value, *keys):
     """
     d = getbykeys(dict, *keys[:-1])
     d[keys[-1]] = value
-
-    
-        
-        

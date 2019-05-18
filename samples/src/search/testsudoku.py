@@ -3,7 +3,7 @@
 
 import unittest
 from time import time
-from search import *
+
 from sudoku import *
 
 voidsudoku = """
@@ -150,8 +150,7 @@ t3 = sz0704072 = """
 - - 7   8 2 6   - - -
 """
 
-
-sz070217 =  """
+sz070217 = """
 - - 1   - 7 -   3 5 6
 - 5 -   - 6 -   - 1 -
 - 6 -   1 - 5   - 9 -
@@ -165,7 +164,7 @@ sz070217 =  """
 - 4 -   - - 6   5 - 1
 """
 
-gentle =  """
+gentle = """
 - 1 -   4 2 -   - - 5
 - - 2   - 7 1   - 3 9
 - - -   - - -   - 4 -
@@ -178,7 +177,7 @@ gentle =  """
 1 2 -   7 3 -   5 - -
 3 - -   - 8 2   - 7 -
 """
-gentle1 =  """
+gentle1 = """
 - 1 -   4 2 -   - - 5
 - - 2   - 7 1   - 3 9
 - - -   - - -   - 4 -
@@ -191,7 +190,7 @@ gentle1 =  """
 1 2 -   7 3 -   5 - -
 3 - -   - 8 2   - - -
 """
-moderate =  """
+moderate = """
 - - 6   2 - 1   - - -
 8 - -   - - -   - 7 1
 - - 1   7 - -   - 3 2
@@ -205,8 +204,7 @@ moderate =  """
 - - -   4 - 6   5 - -
 """
 
-
-tough =  """
+tough = """
 - - 1   9 - -   - - 8
 6 - -   - 8 5   - 3 -
 - - 7   - 6 -   1 - -
@@ -220,7 +218,7 @@ tough =  """
 7 - -   - - 9   2 - -
 """
 
-diabolical =  """
+diabolical = """
 - 9 -   7 - -   8 6 -
 - 3 1   - - 5   - 2 -
 8 - 6   - - -   - - -
@@ -235,18 +233,20 @@ diabolical =  """
 """
 
 
-class TestSudoku(unittest.TestCase):    
+class TestSudoku(unittest.TestCase):
     def test(self):
         t = []
-    
-        print "\nstart sudoku"
+
+        print
+        "\nstart sudoku"
 
         t.append(time())
         sp1 = SudokuProblem(p1)
         searchByFunction(sp1)
         t.append(time())
-  
-        print "stop sudoku"    
+
+        print
+        "stop sudoku"
 
 
 def suite():
@@ -254,10 +254,10 @@ def suite():
 
 
 if __name__ == '__main__':
-##    runner = unittest.TextTestRunner()
-##    runner.run(suite())
-    
-    g  = SudokuProblem(gentle)
+    ##    runner = unittest.TextTestRunner()
+    ##    runner.run(suite())
+
+    g = SudokuProblem(gentle)
     gs = searchByFunction(g)
 ##
 ##    m  = SudokuProblem(moderate)
@@ -268,4 +268,3 @@ if __name__ == '__main__':
 
 ##    d  = SudokuProblem(diabolical)
 ##    ds = searchByFunction(d)
-    

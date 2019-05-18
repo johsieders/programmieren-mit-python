@@ -1,8 +1,7 @@
-from fp.util import *
-
-
 from unittest import makeSuite, TestCase, TestSuite, TextTestRunner
+
 from scanning.scan import scanner
+
 
 class TestScan(TestCase):
     def testScan(self):

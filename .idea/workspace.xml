@@ -2,17 +2,326 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8a4544a-8e69-484b-9954-e44fef5f431a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programmieren-mit-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/programmieren-mit-python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/dwh/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/dwhutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programmieren-mit-python.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/com/easyexcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/com/easyexcel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/com/infix2postfix.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/com/infix2postfix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/dwh/dwh.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/dwh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/dwh/dwhdim.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/dwhdim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/dwh/dwhutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/dwhutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/dwh/files.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/dwh/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/dwh/super.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/super.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/dwh/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/dwh/testdim.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/testdim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/dwh/testdwh.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/dwh/testdwh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/ex0.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/ex2.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/src/ex/ex3.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/ex4.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/ex5.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/ex6.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/test3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/test4.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/test4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/test5.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/test5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/timehistogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/timehistogram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/ex/timereverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/timereverse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/src/fp/testutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/fp/testutil.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/src/fp/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/fp/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/it/iterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/iterators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/src/it/iterators_rec.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/iterators_rec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/it/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/it/tee.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/tee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/it/testimap.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/testimap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/src/it/testiterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/testiterators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/it/testutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/testutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/it/timeconst.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/timeconst.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/it/timeiterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/timeiterators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/it/timemerge.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/timemerge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/it/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/intervallist.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/intervallist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/intervals_.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/intervals_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/intervals_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/intervals_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/intervals_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/intervals_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/intervals_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/intervals_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/intervals_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/intervals_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/testintervals_.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/testintervals_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/testvlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/testvlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/tv.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/tv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/vlist-alt.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/vlist-alt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/vlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/vlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/iv/work.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/iv/work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/num/work.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/num/work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/numbers/fermat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/numbers/fermat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/numbers/testfermat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/numbers/testfermat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/or/pe.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/or/pe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/or/simplex.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/or/simplex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/or/simplex_.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/or/simplex_.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/src/poly/fp.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/fp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/mpoly.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/mpoly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/poly.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/poly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/poly_alt.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/poly_alt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/poly_old.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/poly_old.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/ratpoly.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/ratpoly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/testdecr.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/testdecr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/testfp.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/testfp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/testpoly.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/testpoly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/testpolyrat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/testpolyrat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/work.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/fp.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/fp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/rat-peters.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/rat-peters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/rat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/rat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/rat_.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/rat_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/rat_alt.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/rat_alt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/rat_old.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/rat_old.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/testfp.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/testfp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/testrat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/testrat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/rat/work.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/rat/work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/scanning/scan.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/scanning/scan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/scanning/testscan.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/scanning/testscan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/conjoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/conjoin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/klausurss04.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/klausurss04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/queens.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/queens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/queens_.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/queens_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/soli.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/soli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/soli_old.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/soli_old.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/soligui.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/soligui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/soligui_old.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/soligui_old.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/solisearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/solisearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/solisearch_.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/solisearch_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/str8ts.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/str8ts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/sudoku-.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/sudoku-.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/sudoku.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/sudoku_.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/sudoku_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/sudoku__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/sudoku__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/testqueens.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/testqueens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/teststr8ts.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/teststr8ts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/testsudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/testsudoku.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/ts.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/ts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/tt.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/tt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/search/work.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/search/work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/tax/ftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/tax/ftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/tax/sdict.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/tax/sdict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/tax/tax.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/tax/tax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/test/files.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/test/files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/_cmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/file_cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/file_cache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/redis_cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/redis_cache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/heuristics.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/heuristics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/ansi.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/ansi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/ansitowin32.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/ansitowin32.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/initialise.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/initialise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/win32.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/win32.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/winterm.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/winterm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/misc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/shutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/shutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/sysconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/sysconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/tarfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/tarfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/manifest.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/manifest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/markers.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/markers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/metadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/resources.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/scripts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/wheel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distro.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_ihatexml.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_ihatexml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_inputstream.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_inputstream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_tokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_tokenizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/py.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/py.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/lint.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/lint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/sanitizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/sanitizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/whitespace.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/whitespace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/html5parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/html5parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/dom.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/dom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/genshi.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/genshi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/ipaddress.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/ipaddress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/linklockfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/linklockfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/mkdirlockfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/mkdirlockfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/pidlockfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/pidlockfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/sqlitelockfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/sqlitelockfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/ordereddict.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/ordereddict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/_compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/_structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/_structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/markers.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/markers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/requirements.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/requirements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/specifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/specifiers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/pkg_resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/pkg_resources/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/progress/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/progress/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/progress/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/progress/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/pyparsing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/re-vendor.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/re-vendor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/adapters.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/adapters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/cookies.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/cookies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/hooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/hooks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/big5freq.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/big5freq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/big5prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/big5prober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/chardetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/chardetect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/chardistribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/chardistribution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/charsetgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/charsetgroupprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/charsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/charsetprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/codingstatemachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/codingstatemachine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/cp949prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/cp949prober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/escprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/escprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/escsm.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/escsm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/eucjpprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/eucjpprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euckrfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euckrfreq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euckrprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euckrprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euctwfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euctwfreq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euctwprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euctwprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/gb2312freq.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/gb2312freq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/gb2312prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/gb2312prober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/hebrewprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/hebrewprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/jisfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/jisfreq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/jpcntx.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/jpcntx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langbulgarianmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langbulgarianmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langcyrillicmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langcyrillicmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langgreekmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langgreekmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langhebrewmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langhebrewmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langhungarianmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langhungarianmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langthaimodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langthaimodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/latin1prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/latin1prober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcharsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcharsetprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcsgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcsgroupprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcssm.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcssm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/sbcharsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/sbcharsetprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/sbcsgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/sbcsgroupprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/sjisprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/sjisprober.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/universaldetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/universaldetector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/_collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/_collections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/connectionpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/connectionpool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/appengine.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/appengine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/ntlmpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/ntlmpool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/pyopenssl.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/pyopenssl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/socks.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/socks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/filepost.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/filepost.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/ordered_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/ordered_dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/poolmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/poolmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/retry.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/retry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/timeout.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/timeout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/sessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/sessions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/retrying.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/retrying.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/labels.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/labels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/mklabels.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/mklabels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/x_user_defined.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/x_user_defined.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/basecommand.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/basecommand.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/baseparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/baseparser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/cmdoptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/cmdoptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/completion.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/completion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/download.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/freeze.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/freeze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/hash.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/hash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/install.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/install.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/show.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/uninstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/uninstall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/wheel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/compat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/compat/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/compat/dictconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/compat/dictconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/download.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/locations.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/locations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/operations/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/operations/check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/operations/freeze.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/operations/freeze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/pep425tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/pep425tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_install.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_install.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_uninstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_uninstall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/encoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/glibc.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/glibc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/hashes.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/hashes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/outdated.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/outdated.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/packaging.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/packaging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/bazaar.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/bazaar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/git.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/git.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/mercurial.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/mercurial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/subversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/subversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/wheel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Scripts/easy_install-3.6-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Scripts/easy_install-3.6-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Scripts/easy_install-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Scripts/easy_install-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Scripts/pip-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Scripts/pip-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Scripts/pip3-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Scripts/pip3-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/venv/Scripts/pip3.6-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/venv/Scripts/pip3.6-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/visual/canvas.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/visual/canvas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/visual/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/visual/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/web/trycgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/web/trycgi.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,139 +341,92 @@
     <SUITE FILE_PATH="coverage/programmieren_mit_python$Unittests_in_test2_py.coverage" NAME="Unittests in test2.py Coverage Results" MODIFIED="1558171884138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/src/ex" />
     <SUITE FILE_PATH="coverage/programmieren_mit_python$Unittests_for_test3_CaseCheck_testToRomanCase.coverage" NAME="Unittests for test3.CaseCheck.testToRomanCase Coverage Results" MODIFIED="1558171333191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/src/ex" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-551690934">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="11" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="11" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="172" />
-          <entry key="dummy" value="5" />
-          <entry key="py" value="296" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="468" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/samples/src/ex/ex1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="1411">
+              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/ex/test1.py">
+        <entry file="file://$PROJECT_DIR$/samples/src/ex/timereverse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1383">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding>
-                <element signature="e#32#62#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/ex/test3.py">
+        <entry file="file://$PROJECT_DIR$/samples/src/ex/timehistogram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2335" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/ex/ex3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="68" column="37" lean-forward="true" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/ex/ex2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-444" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/ex/test2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-              <folding>
-                <element signature="e#28#95#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/poly/fp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="187">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/samples/src/fp/util.py">
+        <entry file="file://$PROJECT_DIR$/samples/src/ex/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            <state relative-caret-position="386">
+              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding>
-                <marker date="1558173242605" expanded="true" signature="330:362" ph="..." />
-                <marker date="1558173242605" expanded="true" signature="439:480" ph="..." />
-                <marker date="1558173242605" expanded="true" signature="522:552" ph="..." />
-                <marker date="1558173242605" expanded="true" signature="600:719" ph="..." />
-                <marker date="1558173242605" expanded="true" signature="732:750" ph="..." />
+                <element signature="e#31#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/dwh/dwhutil.py">
+        <entry file="file://$PROJECT_DIR$/samples/src/ex/test4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/dwh/dwhdim.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/samples/src/ex/ex5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/src/ex/test5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/src/ex/ex4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>failUnless</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>assert</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -172,10 +434,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/samples/src/ex/test1.py" />
         <option value="$PROJECT_DIR$/samples/src/ex/ex3.py" />
         <option value="$PROJECT_DIR$/samples/src/poly/fp.py" />
         <option value="$PROJECT_DIR$/samples/src/fp/util.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/test3.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/test2.py" />
+        <option value="$PROJECT_DIR$/samples/src/numbers/testfermat.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/timereverse.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/timehistogram.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/test1.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/ex1.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/ex4.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/test4.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/test5.py" />
+        <option value="$PROJECT_DIR$/samples/src/ex/ex5.py" />
       </list>
     </option>
   </component>
@@ -186,67 +458,85 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="3866" />
-    <option name="height" value="2106" />
+    <option name="x" value="480" />
+    <option name="y" value="260" />
+    <option name="width" value="2880" />
+    <option name="height" value="1560" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <showMembers Scope="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="programmieren-mit-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmieren-mit-python" type="462c0819:PsiDirectoryNode" />
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\j.siedersleben\Google Drive\python\sandbox" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
-              <item name="programmieren-mit-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmieren-mit-python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\j.siedersleben\Google Drive\python\sandbox" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="samples" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="programmieren-mit-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmieren-mit-python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dwh" type="462c0819:PsiDirectoryNode" />
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\j.siedersleben\Google Drive\python\sandbox" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="samples" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="programmieren-mit-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmieren-mit-python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ex" type="462c0819:PsiDirectoryNode" />
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\j.siedersleben\Google Drive\python\sandbox" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="samples" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ex" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="programmieren-mit-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmieren-mit-python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fp" type="462c0819:PsiDirectoryNode" />
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\j.siedersleben\Google Drive\python\sandbox" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="samples" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ex" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test1.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\j.siedersleben\Google Drive\python\sandbox" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="samples" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="numbers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558171937006" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myShowDebugConsoleByDefault" value="true" />
+    <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -273,6 +563,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="programmieren-mit-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -295,15 +593,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="programmieren-mit-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/src/ex" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/src/ex/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="Unittests for test3.CaseCheck.testToRomanCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test5.TestLazyDictionary" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="programmieren-mit-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -312,13 +621,12 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test3.CaseCheck.testToRomanCase&quot;" />
+      <option name="_new_target" value="&quot;test5.TestLazyDictionary&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test3.KnownValues.testToRomanKnownValues" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test5.TestLazyTuple" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="programmieren-mit-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -327,13 +635,12 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test3.KnownValues.testToRomanKnownValues&quot;" />
+      <option name="_new_target" value="&quot;test5.TestLazyTuple&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test1.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test5.TestYdict" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="programmieren-mit-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -342,10 +649,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/samples/src/ex/test1.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test5.TestYdict&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test2.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -357,41 +663,25 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/samples/src/ex/test2.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test3.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="programmieren-mit-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/src/ex" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/samples/src/ex/test3.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test1.py" />
+      <item itemvalue="Python tests.Unittests for test5.TestLazyDictionary" />
+      <item itemvalue="Python tests.Unittests for test5.TestYdict" />
+      <item itemvalue="Python tests.Unittests for test5.TestLazyTuple" />
+      <item itemvalue="Python.test1" />
       <item itemvalue="Python tests.Unittests in test2.py" />
-      <item itemvalue="Python tests.Unittests for test3.KnownValues.testToRomanKnownValues" />
-      <item itemvalue="Python tests.Unittests in test3.py" />
-      <item itemvalue="Python tests.Unittests for test3.CaseCheck.testToRomanCase" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests in test2.py" />
-        <item itemvalue="Python tests.Unittests in test3.py" />
-        <item itemvalue="Python tests.Unittests for test3.CaseCheck.testToRomanCase" />
-        <item itemvalue="Python tests.Unittests for test3.KnownValues.testToRomanKnownValues" />
-        <item itemvalue="Python tests.Unittests in test1.py" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python tests.Unittests for test5.TestLazyTuple" />
+        <item itemvalue="Python tests.Unittests for test5.TestYdict" />
+        <item itemvalue="Python tests.Unittests for test5.TestLazyDictionary" />
       </list>
     </recent_temporary>
   </component>
@@ -414,44 +704,44 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test1_py - 2019.05.16 at 15h 13m 51s.xml">
+    <history-entry file="Unittests_in_test1_py - 2019.05.18 at 16h 34m 21s.xml">
       <configuration name="Unittests in test1.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test2_py - 2019.05.16 at 15h 14m 02s.xml">
+    <history-entry file="Unittests_in_test2_py - 2019.05.18 at 16h 34m 25s.xml">
       <configuration name="Unittests in test2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test2_py - 2019.05.16 at 15h 15m 20s.xml">
-      <configuration name="Unittests in test2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test1_py - 2019.05.18 at 11h 16m 33s.xml">
-      <configuration name="Unittests in test1.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test3_KnownValues_testToRomanKnownValues - 2019.05.18 at 11h 21m 11s.xml">
-      <configuration name="Unittests for test3.KnownValues.testToRomanKnownValues" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test3_py - 2019.05.18 at 11h 21m 23s.xml">
+    <history-entry file="Unittests_in_test3_py - 2019.05.18 at 16h 34m 31s.xml">
       <configuration name="Unittests in test3.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test3_CaseCheck_testToRomanCase - 2019.05.18 at 11h 22m 13s.xml">
-      <configuration name="Unittests for test3.CaseCheck.testToRomanCase" configurationId="tests" />
+    <history-entry file="Unittests_in_test4_py - 2019.05.18 at 16h 36m 57s.xml">
+      <configuration name="Unittests in test4.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3_py - 2019.05.18 at 11h 30m 16s.xml">
-      <configuration name="Unittests in test3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test4_py - 2019.05.18 at 16h 37m 43s.xml">
+      <configuration name="Unittests in test4.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3_py - 2019.05.18 at 11h 31m 09s.xml">
-      <configuration name="Unittests in test3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test4_py - 2019.05.18 at 16h 38m 58s.xml">
+      <configuration name="Unittests in test4.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test2_py - 2019.05.18 at 11h 31m 24s.xml">
-      <configuration name="Unittests in test2.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test5_py - 2019.05.18 at 16h 45m 33s.xml">
+      <configuration name="Unittests in test5.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test5_TestLazyDictionary - 2019.05.18 at 17h 01m 05s.xml">
+      <configuration name="Unittests for test5.TestLazyDictionary" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test5_TestYdict - 2019.05.18 at 17h 01m 19s.xml">
+      <configuration name="Unittests for test5.TestYdict" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test5_TestLazyTuple - 2019.05.18 at 17h 01m 33s.xml">
+      <configuration name="Unittests for test5.TestLazyTuple" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="5714000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1933" height="1053" extended-state="7" />
+    <frame x="-7" y="-7" width="1933" height="1053" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22506666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1800948" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -460,17 +750,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.47453955" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46536797" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298969" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3300866" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.42532468" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -487,8 +778,45 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/samples/src/search/queens.py">
@@ -509,53 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex0.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/ex/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1383">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="e#32#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="68" column="37" lean-forward="true" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/ex/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2335" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/ex/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-          <folding>
-            <element signature="e#28#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-444" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/samples/src/poly/fp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -573,16 +854,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2533">
+          <caret line="150" selection-start-line="150" selection-end-line="151" selection-end-column="19" />
+          <folding>
+            <element signature="e#182#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/samples/src/fp/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="714">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
-            <marker date="1558173242605" expanded="true" signature="330:362" ph="..." />
-            <marker date="1558173242605" expanded="true" signature="439:480" ph="..." />
-            <marker date="1558173242605" expanded="true" signature="522:552" ph="..." />
-            <marker date="1558173242605" expanded="true" signature="600:719" ph="..." />
-            <marker date="1558173242605" expanded="true" signature="732:750" ph="..." />
+            <element signature="e#84#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/numbers/testfermat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#35#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/timeit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/timereverse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/timehistogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/test4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/test5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/ex5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="e#31#46#0" expanded="true" />
           </folding>
         </state>
       </provider>

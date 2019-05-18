@@ -1,18 +1,19 @@
-
 # unit six
 # js 2.9.2004
 
 # easy Excel from Python/Programming on Win32, p. 149
 # js 26.11.01
 
-from win32com.client import Dispatch
 from types import UnicodeType
+
+from win32com.client import Dispatch
+
 
 def fixStringAndDate(value):
     if type(value) is UnicodeType:
         return str(value)
-##    elif type(value) is TimeType:
-##        return int(value)
+    ##    elif type(value) is TimeType:
+    ##        return int(value)
     else:
         return value
 
@@ -26,10 +27,10 @@ class EasyExcel:
         self.xlApp = Dispatch('Excel.Application')
         if filename:
             self.filename = filename
-            self.xlBook   = self.xlApp.Workbooks.Open(filename)
+            self.xlBook = self.xlApp.Workbooks.Open(filename)
         else:
             self.filename = ''
-            self.xlBook   = self.xlApp.Workbooks.Add()
+            self.xlBook = self.xlApp.Workbooks.Add()
 
     def setVisible(self, flag):
         self.xlApp.Visible = flag
@@ -65,7 +66,7 @@ class EasyExcel:
         """ insert a 2d array starting at (topRow, leftCol).
             Works out the sheet size for itself """
         bottomRow = topRow + len(data) - 1
-        rightCol  = len(data[0]) + 1
+        rightCol = len(data[0]) + 1
         sheet = self.xlBook.Worksheets(sheetNbr)
         sheet.Range(sheet.Cells(topRow, leftCol),
                     sheet.Cells(bottomRow, rightCol)).Value = data
@@ -76,14 +77,12 @@ class EasyExcel:
         sheet = self.xlBook.Worksheets(sheetNbr)
 
         bottom = topRow
-        while sheet.Cells(bottom+1, leftCol).Value not in [None, '']:
+        while sheet.Cells(bottom + 1, leftCol).Value not in [None, '']:
             bottom += 1
 
         right = leftCol
-        while sheet.Cells(topRow, right+1).Value not in [None, '']:
+        while sheet.Cells(topRow, right + 1).Value not in [None, '']:
             right += 1
 
         return sheet.Range(sheet.Cells(topRow, leftCol),
                            sheet.Cells(bottom, right)).Value
-        
-        

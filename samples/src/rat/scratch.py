@@ -11,8 +11,9 @@ class T(tuple):
     def zero(self):
         return self.__zero
 
+
 class L(list):
     def __init__(self, xs):
-        print 'hi'
+        print
+        'hi'
         super(L, self).__init__(xs)
-        

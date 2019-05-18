@@ -1,12 +1,11 @@
 ## unit four
 ## js 10.3.2004
 
-from string import strip
-
 # the dict operators contains all operators with
 # 1) arity (= 1 or 2) and
 # 2) priority (= 1, 2 or 3; 1 = low, 3 = high)
-operators = {'+': (2,1), '-': (2,1), '*': (2,2), '/': (2,2), '~': (1,3)}
+operators = {'+': (2, 1), '-': (2, 1), '*': (2, 2), '/': (2, 2), '~': (1, 3)}
+
 
 def infix2postfix(formula, operators=operators):
     """ transforms an infix into a postfix formula """
@@ -17,26 +16,27 @@ def infix2postfix(formula, operators=operators):
     left, op, right = split(formula, operators)
     if op is None:
         return formula
-    left  = infix2postfix(left, operators)
+    left = infix2postfix(left, operators)
     right = infix2postfix(right, operators)
     if left:
         return left + ' ' + right + op
     else:
         return right + op
 
+
 i2p = infix2postfix
 
 
 def bracketsOk(formula):
-    bc = 0     ## bracket count
+    bc = 0  ## bracket count
     for c in formula:
         if c == '(':
             bc += 1
         elif c == ')':
             bc -= 1
-            if bc < 0:      # bc must never be negative
+            if bc < 0:  # bc must never be negative
                 return False
-    return bc == 0          # bc must be 0
+    return bc == 0  # bc must be 0
 
 
 def stripBrackets(formula):
@@ -52,21 +52,21 @@ def split(formula, operators):
         b) the innermost operator (lowest priority)
         c) the formula's second part 
     """
-    bracketCount = 0          # counts brackets
-    minWeight    = 100000     # weight of lowest priority op
-    minIdx       = -1         # index of this op
+    bracketCount = 0        # counts brackets
+    minWeight = 100000      # weight of lowest priority op
+    minIdx = -1  # index of this op
 
     for i, c in enumerate(formula):
         if c == '(':
             bracketCount += 10
         elif c == ')':
             bracketCount -= 10
-        elif operators.has_key(c):
+        elif c in operators.keys():
             arity, prio = operators[c]
             w = prio + bracketCount
             if minWeight > w:
                 minWeight, minIdx = w, i
-    if minIdx < 0:          ## no operator
+    if minIdx < 0:  ## no operator
         return formula, None, None
     else:
-        return formula[:minIdx], formula[minIdx], formula[minIdx+1:]
+        return formula[:minIdx], formula[minIdx], formula[minIdx + 1:]

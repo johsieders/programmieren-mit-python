@@ -1,16 +1,46 @@
-## test unit one
-## js 29.8.02
+# test unit one
+# js 29.8.02
 
-from unittest import makeSuite
-from unittest import TestCase
-from unittest import TextTestRunner
+
+import unittest
 
 from ex1 import *
 
 
-class TestUnitOne(TestCase):
+class TestUnitOne(unittest.TestCase):
     def testFibo(self):
         self.assertEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34], [fibo(n) for n in range(10)])
+
+    def testHistogram(self):
+        xs = 100 * [1]
+        h = histogram(xs)
+        self.assertEqual(list(h.items()), [(1, 100)])
+
+        h = histogram1(xs)
+        self.assertEqual(list(h.items()), [(1, 100)])
+
+        h = histogram2(xs)
+        self.assertEqual(list(h.items()), [(1, 100)])
+
+        h = histogram3(xs)
+        self.assertEqual(list(h.items()), [(1, 100)])
+
+        xs = list(range(100)) * 3
+        h = histogram(xs)
+        self.assertEqual(h[0], 3)
+        self.assertEqual(h[99], 3)
+
+        h = histogram1(xs)
+        self.assertEqual(h[0], 3)
+        self.assertEqual(h[99], 3)
+
+        h = histogram2(xs)
+        self.assertEqual(h[0], 3)
+        self.assertEqual(h[99], 3)
+
+        h = histogram3(xs)
+        self.assertEqual(h[0], 3)
+        self.assertEqual(h[99], 3)
 
     def testGcd(self):
         self.assertEqual(0, gcd(0, 0))
@@ -18,7 +48,7 @@ class TestUnitOne(TestCase):
         self.assertEqual(8, gcd(0, 8))
         self.assertEqual(100, gcd(100, 100))
         self.assertEqual(1, gcd(99, 100))
-        self.assertEqual(17, gcd(17*23, 17*24))
+        self.assertEqual(17, gcd(17 * 23, 17 * 24))
 
     def testMerge(self):
         self.s = [14, 23, 34, 46]
@@ -126,13 +156,5 @@ class TestUnitOne(TestCase):
         self.assertAlmostEqual(2.644827586, self.resultat)
 
 
-def suite(): 
-    return makeSuite(TestUnitOne)
-
-
-if __name__ == '__main__':
-    runner = TextTestRunner()
-    runner.run(suite())
-        
-
-
+if __name__ == "__main__":
+    unittest.main()

@@ -1,8 +1,10 @@
 ## test entwicklungsumgebung
 ## js 1.4.2010
 
-from tt import intersect
 from unittest import *
+
+from tt import intersect
+
 
 class MyTestCase(TestCase):
     def test1(self):

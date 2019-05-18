@@ -6,6 +6,7 @@
 
 from collections import UserDict
 
+
 class SDict(UserDict):
     def __getitem__(self, n):
         return UserDict.__getitem__(self, (min([k for k in self.keys() if k >= n])))

@@ -1,21 +1,21 @@
 ## test dhwdim
 ## js 8.5.05
 
-from unittest import makeSuite
 from unittest import TestCase
 from unittest import TextTestRunner
+from unittest import makeSuite
 
 from dwhdim import *
 
-produkt = ['Produkt',                           ## name of dimension
-        'Sparte     Gruppe      Produkt',       ## levels of dimension
-           
-        'Food       Obst        Apfel'  ,       ## list of elements by levels
-        '                       Birne',
-        '           Gemuese     Kohl',
-        '                       Lauch',
-        'Non-Food   Werkzeug    Hammer',
-        '                       Bohrer']
+produkt = ['Produkt',  ## name of dimension
+           'Sparte     Gruppe      Produkt',  ## levels of dimension
+
+           'Food       Obst        Apfel',  ## list of elements by levels
+           '                       Birne',
+           '           Gemuese     Kohl',
+           '                       Lauch',
+           'Non-Food   Werkzeug    Hammer',
+           '                       Bohrer']
 
 
 class TestProdukt(TestCase):
@@ -29,16 +29,12 @@ class TestProdukt(TestCase):
         self.sd.getSlice('Non-Food')
         self.sd.getSlice('Non-Food', 'Werkzeug', 'Hammer')
         self.sd.getSlice('Non-Food', 'Werkzeug')
-        
 
-def suite(): 
+
+def suite():
     return makeSuite(TestProdukt)
 
 
 if __name__ == '__main__':
     runner = TextTestRunner()
     runner.run(suite())
-
-
-
-

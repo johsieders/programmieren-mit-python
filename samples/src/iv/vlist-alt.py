@@ -5,15 +5,17 @@
 ## relaunch 21.11.04
 ## 26.12.04  ok 
 
-from operator import add
 from bisect import bisect_left, bisect_right
 from functools import reduce
+from operator import add
 
-flip = lambda f: lambda x, y: f(y, x)      # flips args
+flip = lambda f: lambda x, y: f(y, x)  # flips args
+
 
 def isInterval(v):
     """ v : list or tuple of length 2 """
     return isinstance(v, (tuple, list)) and len(v) == 2
+
 
 def isEmptyInterval(v):
     """ v : list or tuple of length 2 """
@@ -54,7 +56,7 @@ class Vlist(list):
 
     def __init__(self, *vs):
         """ vs: sequence of intervals """
-        self.leftbounded = True       ## leftbounded as default
+        self.leftbounded = True  ## leftbounded as default
         for v in vs:
             self.append(v)
 
@@ -63,7 +65,6 @@ class Vlist(list):
         result[:] = self[:]
         result.leftbounded = self.leftbounded
         return result
-
 
     def outside(self, i):
         """ outside(i) == True <=> self[i] not in self """
@@ -91,10 +92,8 @@ class Vlist(list):
         else:
             return self.inside(bisect_right(self, x))
 
-
     def __pos__(self):
         return self
-
 
     def __neg__(self):
         """ Returns vlist complementary to self
@@ -104,13 +103,12 @@ class Vlist(list):
         result.leftbounded = not self.leftbounded
         return result
 
-
     def append(self, v):
         """ v : interval
             Non empty intervals are inserted in the correct place.
             Returns None, changes self """
 
-        if isEmptyInterval(v):      ## v is empty, nothing to do                                  
+        if isEmptyInterval(v):  ## v is empty, nothing to do
             return None
 
         ## where does the interval [v[0], v[1]) extend?     
@@ -124,48 +122,46 @@ class Vlist(list):
         if v[0] is not None and self.outside(tmp[0]):
             head = [v[0]]
         else:
-            head = []               ## forget v[0] if it's inside
+            head = []  ## forget v[0] if it's inside
         if v[1] is not None and self.outside(tmp[1]):
             tail = [v[1]]
         else:
-            tail = []               ## forget v[1] if it's inside        
+            tail = []  ## forget v[1] if it's inside
 
         ## set up union            
         self[tmp[0]:tmp[1]] = head + tail
         self.leftbounded = (v[0] is not None) and self.leftbounded
-
 
     def intersect(self, v):
         """ v : interval
             Returns elementwise intersection of self and v.
             Does not change self. """
 
-        if isEmptyInterval(v):      ## v is empty, return empty interval            
+        if isEmptyInterval(v):  ## v is empty, return empty interval
             return Vlist()
 
         ## where does the interval [v[0], v[1]) extend?
         tmp = [0, len(self)]
-        if v[0] is not None:        ## self[i] <= v[0] for i < tmp[0]
+        if v[0] is not None:  ## self[i] <= v[0] for i < tmp[0]
             tmp[0] = bisect_right(self, v[0])
-        if v[1] is not None:        ## self[i] >= v[1] for i > tmp[1]
+        if v[1] is not None:  ## self[i] >= v[1] for i > tmp[1]
             tmp[1] = bisect_left(self, v[1])
 
         ## what about the bounds v[0] and v[1]?
         if v[0] is not None and self.inside(tmp[0]):
             head = [v[0]]
         else:
-            head = []               ## forget v[0] if it's outside
+            head = []  ## forget v[0] if it's outside
         if v[1] is not None and self.inside(tmp[1]):
             tail = [v[1]]
         else:
-            tail = []               ## forget v[1] if it's outside
+            tail = []  ## forget v[1] if it's outside
 
         ## set up intersection
         result = Vlist()
         result[:] = head + self[tmp[0]:tmp[1]] + tail
         result.leftbounded = (v[0] is not None) or self.leftbounded
         return result
-
 
     def __ior__(self, vs):
         """ vs: vlist.
@@ -177,12 +173,10 @@ class Vlist(list):
             self.append(v)
         return self
 
-
     def __or__(self, vs):
         result = self.clone()
         result |= vs
         return result
-
 
     def __and__(self, vs):
         """ vs: vlist. Cool.
@@ -199,7 +193,6 @@ class Vlist(list):
         for v in vs:
             result.extend(self.intersect(v)[:])
         return result
-
 
     def __sub__(self, vs):
         """ vs: vlist """
@@ -230,13 +223,11 @@ class Vlist(list):
     __ge__ = flip(__le__)
     __gt__ = flip(__lt__)
 
-
     def __iter__(self):
         if self.leftbounded:
             return chain(((None, False),), zip(self, cycle((True, False))))
         else:
             return chain(((None, True),), zip(self, cycle((False, True))))
-        
 
     def __iter__XX(self):
         """ yields all intervals in self """
@@ -256,11 +247,11 @@ class Vlist(list):
 
         return inner()
 
-
     def __repr__(self):
         result = ''
         for v in self:
             result += '[' + repr(v[0]) + ', ' + repr(v[1]) + '), '
         return result[:-2]
 
-iv = Vlist    
+
+iv = Vlist

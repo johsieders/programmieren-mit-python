@@ -3,13 +3,14 @@
 
 from unittest import makeSuite, TestCase, TestSuite, TextTestRunner
 
+
 class TestUtil(TestCase):
     def testgcd(self):
         pass
 
 
 def suite():
-    suite = TestSuite()    
+    suite = TestSuite()
     suite.addTest(makeSuite(TestUtil))
     return suite
 

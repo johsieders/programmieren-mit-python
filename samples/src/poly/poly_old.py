@@ -4,6 +4,7 @@
 
 from mathutil import flip, gcd
 
+
 class Polynom(list):
     """
     p(x) = c[0]x**(n-1) + c[1]x**(n-2) + .. + c[n-2]x + c[n-1]
@@ -15,7 +16,7 @@ class Polynom(list):
     self.__zero = c[0] - c[0]
     coefficients support +, -, *, /, bool
     """
- 
+
     def __init__(self, c, zero=None):
         """ c: sequence of coefficients
             leading zeros are discarded """
@@ -51,7 +52,7 @@ class Polynom(list):
             return self, Polynom([x])
 
     def __call__(self, x):
-        return reduce(lambda a, b : x*a + b, self)
+        return reduce(lambda a, b: x * a + b, self)
 
     #########################
     # arithmetic operations	#
@@ -70,7 +71,7 @@ class Polynom(list):
         else:
             a, b = q, self
         result = list(a)
-        for i in range(1, len(b)+1):
+        for i in range(1, len(b) + 1):
             result[-i] += b[-i]
         return Polynom(result, self.__zero)
 
@@ -79,10 +80,10 @@ class Polynom(list):
 
     def __mul__(self, p):
         s, q = coerce(self, p)
-        result = [self.__zero]*(len(self)+len(q)-1)
+        result = [self.__zero] * (len(self) + len(q) - 1)
         for i in range(len(self)):
             for j in range(len(q)):
-                result[i+j] += self[i]*q[j]
+                result[i + j] += self[i] * q[j]
         return Polynom(result, self.__zero)
 
     def __divmod__(self, p):
@@ -93,34 +94,34 @@ class Polynom(list):
         q = []
         r = list(self)
         while len(r) >= len(t):
-            c = r[0]/t[0]   ## quotient of highest coefficients
+            c = r[0] / t[0]  ## quotient of highest coefficients
             q.append(c)
-            for i in range(len(t)):  
-                r[i] -= c*t[i]
+            for i in range(len(t)):
+                r[i] -= c * t[i]
             i = 0
             while i < len(r) and not r[i]: i += 1
-            r = r[i:]       ## discard leading zeros
+            r = r[i:]  ## discard leading zeros
         return Polynom(q, self.__zero), Polynom(r, self.__zero)
 
-##    recursive implementation
-##    def __divmod__(self, p, q=None):
-##        if not q:
-##            q = Polynom([self.__zero])
-##        n = self.degree() - p.degree() 
-##        if n < 0:
-##            return [q, self]
-##        a = self[self.degree()]/p[p.degree()]
-##        if not a:
-##            return [q, self]
-##        r = self - a*Polynom(n)*p
-##        q = q + a*Polynom(n)
-##        return r.__divmod__(p, q)
+    ##    recursive implementation
+    ##    def __divmod__(self, p, q=None):
+    ##        if not q:
+    ##            q = Polynom([self.__zero])
+    ##        n = self.degree() - p.degree()
+    ##        if n < 0:
+    ##            return [q, self]
+    ##        a = self[self.degree()]/p[p.degree()]
+    ##        if not a:
+    ##            return [q, self]
+    ##        r = self - a*Polynom(n)*p
+    ##        q = q + a*Polynom(n)
+    ##        return r.__divmod__(p, q)
 
     def __div__(self, p):
-        return divmod(self,p)[0]
+        return divmod(self, p)[0]
 
     def __mod__(self, p):
-        return divmod(self,p)[1]
+        return divmod(self, p)[1]
 
     def __pow__(self, n):
         ## kein coerce!!
@@ -129,15 +130,15 @@ class Polynom(list):
         if not n:
             return Polynom([self.__zero])
         else:
-            return reduce(mul, [self]*n)
+            return reduce(mul, [self] * n)
 
     def __cmp__(self, p):
         pass
-        
+
     # make operators with reversed operands
     __radd__, __rmul__ = __add__, __mul__
 
-    __rsub__, __rdiv__, __rmod__, __rcmp__ =      \
-    [flip(m) for m in [__sub__, __div__, __mod__, __cmp__]]
+    __rsub__, __rdiv__, __rmod__, __rcmp__ = \
+        [flip(m) for m in [__sub__, __div__, __mod__, __cmp__]]
 
 ## end of class Polynom

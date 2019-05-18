@@ -10,6 +10,7 @@ a.shape = (4)
 b.shape = (3, 4)
 c.shape = (2, 3, 4)
 
+
 def expand(a, b):
     """ a und b sind zwei arrays.
         1) wenn a.shape == b.shape, dann ist nichts zu tun
@@ -19,16 +20,16 @@ def expand(a, b):
            a.shape[i] > b.shape[i] und b.shape=1 """
 
     if a.shape == b.shape:
-        return a, b     # nichts zu tun
+        return a, b  # nichts zu tun
 
     if a.rank < b.rank:
-        a, b = b, a   # jetzt ist a.rank >= b.rank
-        
+        a, b = b, a  # jetzt ist a.rank >= b.rank
+
     b.shape = (1,) * (a.rank - b.rank) + b.shape
-                     # jetzt ist a.rank == b.rank
+    # jetzt ist a.rank == b.rank
 
     if np.alltrue(np.less_equal(a.shape, b.shape)):
-        a, b = b, a   # jetzt ist a.shape >= b.shape
+        a, b = b, a  # jetzt ist a.shape >= b.shape
     elif np.alltrue(np.less_equal(b.shape, a.shape)):
         pass
     else:

@@ -3,8 +3,10 @@
 # ueberarbeitung 29.12.03, 1.1.2004
 
 from types import ListType, TupleType
+
 from UserList import UserList
 from mathutil import flip, gcd
+
 
 class Polynom(UserList):
     """
@@ -17,7 +19,7 @@ class Polynom(UserList):
     self.__zero = c[0] - c[0]
     coefficients support +, -, *, /, bool
     """
- 
+
     def __init__(self, c, zero=None):
         """ c: sequence of coefficients
             leading zeros are discarded """
@@ -52,7 +54,7 @@ class Polynom(UserList):
             return self, Polynom([x])
 
     def __call__(self, x):
-        return reduce(lambda a, b : x*a + b, self)
+        return reduce(lambda a, b: x * a + b, self)
 
     #########################
     # arithmetic operations	#
@@ -70,7 +72,7 @@ class Polynom(UserList):
         else:
             a, b = p, self
         result = list(a)
-        for i in range(1, len(b)+1):
+        for i in range(1, len(b) + 1):
             result[-i] += b[-i]
         return Polynom(result, self.__zero)
 
@@ -78,10 +80,10 @@ class Polynom(UserList):
         return self + -p
 
     def __mul__(self, p):
-        result = [self.__zero]*(len(self)+len(p)-1)
+        result = [self.__zero] * (len(self) + len(p) - 1)
         for i in range(len(self)):
             for j in range(len(p)):
-                result[i+j] += self[i]*p[j]
+                result[i + j] += self[i] * p[j]
         return Polynom(result, self.__zero)
 
     def __divmod__(self, p):
@@ -91,50 +93,50 @@ class Polynom(UserList):
         q = []
         r = list(self)
         while len(r) >= len(p):
-            c = r[0]/p[0]   ## quotient of highest coefficients
+            c = r[0] / p[0]  ## quotient of highest coefficients
             q.append(c)
-            for i in range(len(p)):  
-                r[i] -= c*p[i]
+            for i in range(len(p)):
+                r[i] -= c * p[i]
             i = 0
             while i < len(r) and not r[i]: i += 1
-            r = r[i:]       ## discard leading zeros
+            r = r[i:]  ## discard leading zeros
         return Polynom(q, self.__zero), Polynom(r, self.__zero)
 
-##    recursive implementation
-##    def __divmod__(self, p, q=None):
-##        if not q:
-##            q = Polynom([self.__zero])
-##        n = self.degree() - p.degree() 
-##        if n < 0:
-##            return [q, self]
-##        a = self[self.degree()]/p[p.degree()]
-##        if not a:
-##            return [q, self]
-##        r = self - a*Polynom(n)*p
-##        q = q + a*Polynom(n)
-##        return r.__divmod__(p, q)
+    ##    recursive implementation
+    ##    def __divmod__(self, p, q=None):
+    ##        if not q:
+    ##            q = Polynom([self.__zero])
+    ##        n = self.degree() - p.degree()
+    ##        if n < 0:
+    ##            return [q, self]
+    ##        a = self[self.degree()]/p[p.degree()]
+    ##        if not a:
+    ##            return [q, self]
+    ##        r = self - a*Polynom(n)*p
+    ##        q = q + a*Polynom(n)
+    ##        return r.__divmod__(p, q)
 
     def __div__(self, p):
-        return divmod(self,p)[0]
+        return divmod(self, p)[0]
 
     def __mod__(self, p):
-        return divmod(self,p)[1]
+        return divmod(self, p)[1]
 
-## doesn't work with __coerce__:
-## __coerce__ transforms n in a polynom
-##    def __pow__(self, n):
-##        from operator import mul
-##        from types import IntType, LongType
-##        assert type(n) in [IntType, LongType]
-##        if not n:
-##            return Polynom([self.__zero])
-##        else:
-##            return reduce(mul, [self]*n)
-        
+    ## doesn't work with __coerce__:
+    ## __coerce__ transforms n in a polynom
+    ##    def __pow__(self, n):
+    ##        from operator import mul
+    ##        from types import IntType, LongType
+    ##        assert type(n) in [IntType, LongType]
+    ##        if not n:
+    ##            return Polynom([self.__zero])
+    ##        else:
+    ##            return reduce(mul, [self]*n)
+
     # make operators with reversed operands
     __radd__, __rmul__ = __add__, __mul__
 
-    __rsub__, __rdiv__, __rmod__ =      \
-    map(flip, [__sub__, __div__, __mod__])
+    __rsub__, __rdiv__, __rmod__ = \
+        map(flip, [__sub__, __div__, __mod__])
 
 ## end of class Polynom

@@ -12,10 +12,8 @@
 ##         ('D', 'BY'))         
 
 
+from numpy import array, ravel, sum
 
-from types import SliceType
-from numpy import array, ravel, shape, sum
-    
 
 def getFacts(rawfacts):
     rawfacts = iter(rawfacts)
@@ -39,22 +37,22 @@ class DWH(object):
     facts[i1, i2, .. , in] is the value according to facts
     indexed by i1, i2, .. , in (n = number of dimensions).
     """
-    
+
     def __init__(self, factfactory, *dimensions):
-        self.dimList = list(dimensions)     ## dimensions by order
-        self.dimDict = {}                   ## dimensions by name
-        for dim in dimensions:                    
+        self.dimList = list(dimensions)  ## dimensions by order
+        self.dimDict = {}  ## dimensions by name
+        for dim in dimensions:
             self.dimDict[dim.getName()] = dim
         self.facts = factfactory()
         self.facts.shape = [len(dim) for dim in self.dimList]
-        
+
     def getDimensions(self):
         """
         returns all dimensions of self as a list of strings
         in correct order. Example: ['location', 'product', 'time']
         """
         return [dim.getName() for dim in self.dimList]
-    
+
     def getLevels(self, dimension):
         """
         returns all levels of this dimension given as a list of strings.
@@ -72,9 +70,9 @@ class DWH(object):
         return dim.getElements(level)
 
     def getShape(self):
-        return self.facts.shape    
+        return self.facts.shape
 
-    def howMany(self, *args):           ## only by order
+    def howMany(self, *args):  ## only by order
         """
         howMany is what data warehouses are all about.
         howMany expects n tuples where n = number of dimensions,
@@ -83,4 +81,4 @@ class DWH(object):
         """
         index = [dim.getSlice(*args[i]) for i, dim in enumerate(self.dimList)]
         values = ravel(self.facts[index])
-        return sum(values)             
+        return sum(values)

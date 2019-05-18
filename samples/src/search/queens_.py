@@ -3,8 +3,7 @@
 ## bubenorbis
 
 from test.test_generators import conjoin
-from test.test_generators import flat_conjoin
-from test.test_generators import Queens
+
 
 ## from queens import nextRow
 
@@ -28,16 +27,17 @@ def queens1(n):
     Vorwaerts ohne Generator.    
     Idee: _queens(q, result) ermittelt alle von der Position q ausgehende Loesungen
     und fuegt diese zu result dazu.    
-    """    
+    """
+
     def _queens(q, result):
         if len(q) >= n:
             result.append(q)
-        else:     
+        else:
             for p in nextPositions(n, q):
                 _queens(p, result)
 
         return result
-    
+
     return _queens([], [])
 
 
@@ -48,18 +48,18 @@ def queens2(n):
     Idee: _queens(q) ermittelt alle Loesungen ausgehend von q und gibt sie per
     yield zurueck. Somit ist _queens(q) ein Iterator ueber alle von q ausgehende
     Loesungen  
-    """    
-    def _queens(q): 
+    """
+
+    def _queens(q):
         if len(q) >= n:
             yield q
         else:
             for p in nextPositions(n, q):
                 for s in _queens(p):
                     yield s
-                    
+
     for s in _queens([]):
         yield s
-
 
 
 def queens3(n):
@@ -68,7 +68,8 @@ def queens3(n):
     Backward ohne Generator
     Idee: _queens(k) liefert alle Teilloesungen des Damenproblems mit k besetzten
     Reihen. _queens(k) ruft rekursiv _queens(k - 1)
-    """    
+    """
+
     def _queens(k):
         if k == 0:
             return [[]]
@@ -77,11 +78,10 @@ def queens3(n):
         for q in _queens(k - 1):
             for p in nextPositions(n, q):
                 result.append(p)
-            
-        return result
-    
-    return _queens(n)
 
+        return result
+
+    return _queens(n)
 
 
 ##########################################
@@ -91,13 +91,12 @@ def queens3(n):
 # aus test_generators
 # do not touch
 def simple_conjoin(gs):
-
     def gen(i, values):
         if i >= len(gs):
             yield values
         else:
             for values[i] in gs[i]():
-                for x in gen(i+1, values):
+                for x in gen(i + 1, values):
                     yield x
 
     for x in gen(0, [None] * len(gs)):
@@ -121,20 +120,19 @@ def queens4(n):
             for j in nextRow(n, currentPosition[:i]):
                 currentPosition[i] = j
                 yield j
-                
+
         gs.append(g)
 
-##  cj = simple_conjoin
+    ##  cj = simple_conjoin
     cj = conjoin
-##  cj = flat_conjoin    
+    ##  cj = flat_conjoin
     for s in cj(gs):
         yield s
 
 
-
 def permutations(seq):
     gs = []
-    current = len(seq)*[None]
+    current = len(seq) * [None]
 
     for i in range(len(seq)):
         def g(i=i):
@@ -142,11 +140,11 @@ def permutations(seq):
                 if x not in current[:i]:
                     current[i] = x
                     yield x
+
         gs.append(g)
-    
-    
-##  cj = simple_conjoin
+
+    ##  cj = simple_conjoin
     cj = conjoin
-##  cj = flat_conjoin    
+    ##  cj = flat_conjoin
     for s in cj(gs):
         yield s

@@ -6,16 +6,19 @@
 ## 26.12.04  ok
 ## 6.3.2013 major revision: vlists as step functions
 
-from operator import  and_, or_
 from bisect import bisect_right, bisect_left
 from itertools import cycle, izip
+from operator import and_, or_
+
 from iterators import fmerge, stepfun
 
-flip = lambda f: lambda x, y: f(y, x)      # flips args
+flip = lambda f: lambda x, y: f(y, x)  # flips args
+
 
 def isInterval(v):
     """ v : list or tuple of length 2 """
     return isinstance(v, (tuple, list)) and len(v) == 2
+
 
 def isEmptyInterval(v):
     """ v : list or tuple of length 2 """
@@ -58,14 +61,14 @@ class Vlist(stepfun):
     def __init__(self, sf):
         """ sf: boolean valued step function  """
         stepfun.__init__(self, sf)
-        
+
     def leftunbounded(self):
         return self.values[0]
-    
+
     def inside(self, k):
         ## if leftopen : return true for uneven k
         ## else : return true for even k
-        return self.leftunbounded() != k%2
+        return self.leftunbounded() != k % 2
 
     def __call__(self, x):
         k = bisect_right(self.steps, x) - 1
@@ -100,7 +103,7 @@ class Vlist(stepfun):
 
         if isEmptyInterval(v):  ## v is empty, nothing to do                                  
             return None
-        
+
         aux = [(None, False)] if v[0] is not None else []
         aux += [(v[0], True), (v[1], False)]
         self |= Vlist(aux)
@@ -110,22 +113,21 @@ class Vlist(stepfun):
             return None
 
         i = bisect_left(self.steps, v[0])
-        j = bisect_right(self.steps, v[1]) if v[1] else len(self.steps)      
+        j = bisect_right(self.steps, v[1]) if v[1] else len(self.steps)
 
         middle = []
-        if not self(v[0]) and   \
+        if not self(v[0]) and \
                 ((i < len(self.steps) and v[0] < self.steps[i]) or \
-                i == len(self.steps)):
+                 i == len(self.steps)):
             middle.append(v[0])
-       
+
         if not self(v[1]) and \
-               ((j < len(self.steps) and v[1] < self.steps[j]) or \
-               (j == len(self.steps) and v[1] is not None)):
+                ((j < len(self.steps) and v[1] < self.steps[j]) or \
+                 (j == len(self.steps) and v[1] is not None)):
             middle.append(v[1])
 
         self.steps[i:j] = middle
         self.values[0] |= v[0] is None
-
 
     def union__(self, v):
         if isEmptyInterval(v):  ## v is empty, nothing to do                                  
@@ -133,24 +135,26 @@ class Vlist(stepfun):
 
         i = bisect_left(self.steps, v[0])
         j = bisect_right(self.steps, v[1]) if v[1] else len(self.steps)
-        print "i, j : ", i, j
+        print
+        "i, j : ", i, j
 
         middle = []
-        if not self(v[0]) and   \
+        if not self(v[0]) and \
                 ((i < len(self.steps) and self.steps[i] < v[0]) or \
-                i == len(self.steps)):
+                 i == len(self.steps)):
             middle.append(v[0])
-       
+
         if not self(v[1]) and \
-               ((j < len(self.steps) and v[1] < self.steps[j]) or \
-               (j == len(self.steps) and v[1] is not None)):
+                ((j < len(self.steps) and v[1] < self.steps[j]) or \
+                 (j == len(self.steps) and v[1] is not None)):
             middle.append(v[1])
 
-        print "middle", middle
+        print
+        "middle", middle
         self.steps[i:j] = middle
-        print "self.steps", self.steps
-        self.values[0] |= v[0] is None            
-           
+        print
+        "self.steps", self.steps
+        self.values[0] |= v[0] is None
 
     def __or__(self, vs):
         """ vs: vlist.
@@ -160,7 +164,7 @@ class Vlist(stepfun):
         if not isinstance(vs, Vlist):
             raise TypeError
         return Vlist(fmerge(or_, self, vs))
-       
+
     def __and__(self, vs):
         """ vs: vlist.
             Returns the elementwise intersection of self and vs.
@@ -175,7 +179,7 @@ class Vlist(stepfun):
             Computes the elementwise union of self and vs.            
             Changes self.
         """
-        stepfun.__init__(self, self | vs)        
+        stepfun.__init__(self, self | vs)
 
     def __sub__(self, vs):
         """ vs: vlist """
@@ -190,7 +194,7 @@ class Vlist(stepfun):
             Returns True iff each v in self is contained in vs
         """
         return self == self & vs
-        
+
     def __eq__(self, vs):
         return list.__eq__(self.steps, vs.steps) and \
                self.leftunbounded() == vs.leftunbounded()
@@ -202,24 +206,25 @@ class Vlist(stepfun):
     __gt__ = flip(__lt__)
 
     def __iter__(self):
-        b = self.leftunbounded()        
+        b = self.leftunbounded()
         return izip(list(self.steps), cycle((b, not b)))
-                    
+
     def __repr__(self):
         txt = (', ', '), [')
         if self.leftunbounded():
             result = '(-oo, '
-            i = 1            
+            i = 1
         else:
             result = '['
             i = 0
-                    
+
         for s in self.steps[1:]:
             result += str(s) + txt[i]
-            i = 1-i        
+            i = 1 - i
 
         result = result[:-3] if i == 0 else result + 'oo)'
         return '[' + result + ']'
+
 
 iv = Vlist
 
@@ -236,4 +241,3 @@ z = Vlist(zs)
 v = Vlist(vs)
 w = Vlist(ws)
 t = Vlist(ts)
-
