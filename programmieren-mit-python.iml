@@ -2,8 +2,35 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.6" jdkType="Python SDK" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/ex" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/com" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/dwh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/fp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/it" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/iv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/meta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/num" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/numbers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/or" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/parallel" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/poly" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/rat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/rect" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/scanning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/series" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/tax" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/venv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/visual" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/web" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
   </component>
 </module>

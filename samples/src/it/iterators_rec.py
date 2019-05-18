@@ -2,7 +2,7 @@
 ## js 14.8.2004
 ## completely reworked 1/9/2011
 
-from util import *
+from dwhutil import *
 
 def const(c):
     """ recursive generator yielding the constant c

@@ -48,17 +48,17 @@ fromRomanTable = {}
 def toRoman(n):
     """convert integer to Roman numeral"""
     if not 0 < n <= MAX_ROMAN_NUMERAL:
-        raise OutOfRangeError, "number out of range (must be 1..4999)"
-    if int(n) <> n:
-        raise NotIntegerError, "decimals can not be converted"
+        raise OutOfRangeError("number out of range (must be 1..4999)")
+    if int(n) != n:
+        raise NotIntegerError("decimals can not be converted")
     return toRomanTable[n]
 
 def fromRoman(s):
     """convert Roman numeral to integer"""
     if not s:
-        raise InvalidRomanNumeralError, 'Input cannot be blank'
-    if not fromRomanTable.has_key(s):
-        raise InvalidRomanNumeralError, 'Invalid Roman numeral: %s' % s
+        raise InvalidRomanNumeralError('Input cannot be blank')
+    if s not in fromRomanTable:
+        raise InvalidRomanNumeralError('Invalid Roman numeral: %s' % s)
     return fromRomanTable[s]
 
 def toRomanDynamic(n):

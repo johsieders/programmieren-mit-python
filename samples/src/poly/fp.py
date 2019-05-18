@@ -9,8 +9,8 @@ class F(int):
     """
     
     def __coerce__(self, n):
-        if not isinstance(n, (int, long)):
-            raise TypeError, 'int or long required'
+        if not isinstance(n, (int)):
+            raise TypeError('int required')
         elif not isinstance(n, type(self)):
             return self, type(self)(n%self.p)
         else:

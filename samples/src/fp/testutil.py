@@ -3,7 +3,7 @@
 
 from operator import mul
 from unittest import makeSuite, TestCase, TestSuite, TextTestRunner
-from util import *
+from dwhutil import *
 
 def f(x, y, z):
     return x * y * z

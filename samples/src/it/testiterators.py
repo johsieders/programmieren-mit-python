@@ -3,7 +3,7 @@
 
 from unittest import makeSuite, TestCase, TestSuite, TextTestRunner
 
-from util import *
+from dwhutil import *
 from iterators import *
 from operator import add
 from itertools import count, repeat

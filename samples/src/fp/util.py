@@ -4,6 +4,7 @@
 
 from functools import reduce
 
+
 def curry(f, x):  # binds first arg
     return lambda *xs: f(*(x,) + xs)
 
@@ -15,12 +16,28 @@ def rcurry(f, x):  # binds last arg
 def flip(f):
     return lambda x, y: f(y, x)
 
-compose = lambda f, g: lambda *x: f(g(*x))  # composes f and g
-binary2nary = lambda f: lambda *args: reduce(f, args)
 
-negate = lambda p: lambda x: not p(x)  # negates a predicate
-unaryAnd = lambda p, q: lambda x: p(x) and q(x)
-unaryOr = lambda p, q: lambda x: p(x) or q(x)
+def compose(f, g):          # composes f and g
+    return lambda *x: f(g(*x))
 
-odd = lambda x: x % 2
+
+def binary2nary(f):         # converts s binary function f into an nary one
+    return lambda *args: reduce(f, args)
+
+
+def negate(p):              # negates p
+    return lambda x: not p(x)
+
+
+def unaryAnd(p, q):         # returns p and q
+    return lambda x : p(x) and q(x)
+
+
+def unaryAr(p, q):         # returns p and q
+    return lambda x : p(x) or q(x)
+
+
+def odd(n):
+    return n % 2
+
 even = negate(odd)
