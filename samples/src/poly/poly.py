@@ -2,6 +2,8 @@
 # js, 25.05.01
 # ueberarbeitung 29.12.03, 1.1.2004, 15.7.2004, 9.8.2004
 
+
+from functools import reduce
 flip = lambda f: lambda x, y: f(y, x)  # flips args
 
 
@@ -18,10 +20,13 @@ class Polynom(list):
     """
 
     def __init__(self, cs):
-        """ c: sequence of coefficients
+        """ cs: sequence of coefficients
             trailing zeros are discarded """
         if len(cs) == 0:
-            raise ValueError, 'no coefficients'
+            raise(ValueError, 'no coefficients')
+
+        if type(cs) is Polynom:
+            pass
 
         self.__zero = cs[0] - cs[0]
         i = len(cs) - 1
@@ -33,15 +38,7 @@ class Polynom(list):
         return len(self) - 1
 
     def __nonzero__(self):
-        return len(self) > 1 or bool(self[0])
-
-    def __coerce__(self, x):
-        if isinstance(x, Polynom):
-            return self, x
-        elif isinstance(x, (list, tuple)):
-            return self, Polynom(x)
-        else:
-            return self, Polynom([x])
+        return bool(self[-1])
 
     def __call__(self, x):
         tmp = list(self)
@@ -59,7 +56,7 @@ class Polynom(list):
         return Polynom(self)
 
     def __add__(self, p):
-        s, q = coerce(self, p)
+        q = Polynom(p)
         if len(self) > len(q):
             a, b = self, q
         else:
@@ -129,5 +126,4 @@ if __name__ == '__main__':
     from timeit import *
 
     t = Timer('p(7543.0)', 'from poly import p')
-    print
     t.repeat(3, 10000)

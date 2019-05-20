@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8a4544a-8e69-484b-9954-e44fef5f431a" name="Default" comment="ex1 through ex4 running">
-      <change afterPath="$PROJECT_DIR$/.idea/terminal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sandbox.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/src/np/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/src/np/np1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/src/tf/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/src/tf/keras1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/src/tf/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/ex/ex4.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/ex/ex5.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/ex/ex6.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/ex6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/ex/test4.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/ex/test4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/fp/testutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/fp/testutil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/it/iterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/iterators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/it/scratch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/it/tee.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/tee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/it/testiterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/testiterators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/it/testutil.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/it/timeconst.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/timeconst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/src/it/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/it/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/num/Num.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/num/work.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/np/work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/fp.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/fp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/src/poly/poly.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/src/poly/poly.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,77 +36,124 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/fp/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/samples/src/ex/test2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/src/ex/test1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+              <folding>
+                <element signature="e#31#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/src/np/work.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/src/numbers/testfermat.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="50" selection-start-line="50" selection-end-line="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/src/np/np1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/src/poly/fp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/src/tf/scratch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+              <folding>
+                <element signature="e#54#136#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/samples/src/it/iterators.py">
+        <entry file="file://$PROJECT_DIR$/samples/src/tf/keras1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+            <state relative-caret-position="94">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding>
-                <element signature="e#119#123#0" expanded="true" />
+                <element signature="e#176#199#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/it/iterators_rec.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/it/util.py">
+        <entry file="file://$PROJECT_DIR$/samples/src/poly/mpoly.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+            <state relative-caret-position="-7">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <element signature="e#59#100#0" expanded="true" />
+                <element signature="e#113#148#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/it/tee.py">
+        <entry file="file://$PROJECT_DIR$/samples/src/poly/poly.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/it/timeconst.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/src/it/testiterators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#37#52#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-7">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>failUnless</find>
+      <find>rank</find>
     </findStrings>
     <replaceStrings>
       <replace>assert</replace>
+      <replace>ndim</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -118,7 +163,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/samples/src/ex/ex3.py" />
-        <option value="$PROJECT_DIR$/samples/src/poly/fp.py" />
         <option value="$PROJECT_DIR$/samples/src/fp/util.py" />
         <option value="$PROJECT_DIR$/samples/src/ex/test3.py" />
         <option value="$PROJECT_DIR$/samples/src/ex/test2.py" />
@@ -138,6 +182,13 @@
         <option value="$PROJECT_DIR$/samples/src/it/tee.py" />
         <option value="$PROJECT_DIR$/samples/src/it/timeconst.py" />
         <option value="$PROJECT_DIR$/samples/src/it/iterators.py" />
+        <option value="$PROJECT_DIR$/samples/src/num/work.py" />
+        <option value="$PROJECT_DIR$/samples/src/np/work.py" />
+        <option value="$PROJECT_DIR$/samples/src/np/np1.py" />
+        <option value="$PROJECT_DIR$/samples/src/poly/poly.py" />
+        <option value="$PROJECT_DIR$/samples/src/poly/fp.py" />
+        <option value="$PROJECT_DIR$/samples/src/tf/scratch.py" />
+        <option value="$PROJECT_DIR$/samples/src/tf/keras1.py" />
       </list>
     </option>
   </component>
@@ -147,14 +198,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="480" />
-    <option name="y" value="260" />
-    <option name="width" value="2880" />
-    <option name="height" value="1560" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="14" />
+    <option name="width" value="3476" />
+    <option name="height" value="2090" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
@@ -185,14 +236,7 @@
               <item name="C:\Users\j.siedersleben\Google Drive\python\sandbox" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="samples" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="fp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\j.siedersleben\Google Drive\python\sandbox" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="samples" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="it" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -208,17 +252,26 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558171937006" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/src/tf" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Custom" />
+    <property name="settings.editor.splitter.proportion" value="0.37562189" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myShowDebugConsoleByDefault" value="true" />
     <option name="myUseExistingConsole" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\j.siedersleben\Google Drive\python\sandbox\samples\src\tf" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\j.siedersleben\Google Drive\python\sandbox\samples\src\np" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,7 +285,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.timeconst">
+  <component name="RunManager" selected="Python.keras1">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -275,17 +328,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="timeconst" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="programmieren-mit-python" />
+    <configuration name="keras1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sandbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/src/it" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/src/tf" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/src/it/timeconst.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/src/tf/keras1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -294,32 +347,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test5.TestXtuple" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="programmieren-mit-python" />
+    <configuration name="np1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sandbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/src/ex" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/src/np" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test5.TestXtuple&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/src/np/np1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test5.TestXtuple.testXtuple" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sandbox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/src/tf" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/src/tf/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
       <module name="programmieren-mit-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/src/ex" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test5.TestXtuple.testXtuple&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for testutil.TestUtil" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -336,8 +410,26 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test4.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="tests" factoryName="Doctests">
       <module name="programmieren-mit-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test2.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="sandbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -345,25 +437,26 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/samples/src/ex/test4.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/samples/src/ex/test2.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test4.py" />
-      <item itemvalue="Python tests.Unittests for test5.TestXtuple" />
-      <item itemvalue="Python tests.Unittests for test5.TestXtuple.testXtuple" />
       <item itemvalue="Python tests.Unittests for testutil.TestUtil" />
-      <item itemvalue="Python.timeconst" />
+      <item itemvalue="Python tests.pytest in test2.py" />
+      <item itemvalue="Python.np1" />
+      <item itemvalue="Python.scratch" />
+      <item itemvalue="Python.keras1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.timeconst" />
+        <item itemvalue="Python.keras1" />
+        <item itemvalue="Python.scratch" />
+        <item itemvalue="Python.np1" />
+        <item itemvalue="Python tests.pytest in test2.py" />
         <item itemvalue="Python tests.Unittests for testutil.TestUtil" />
-        <item itemvalue="Python tests.Unittests for test5.TestXtuple.testXtuple" />
-        <item itemvalue="Python tests.Unittests for test5.TestXtuple" />
-        <item itemvalue="Python tests.Unittests in test4.py" />
       </list>
     </recent_temporary>
   </component>
@@ -390,13 +483,17 @@
       <option name="project" value="LOCAL" />
       <updated>1558192122138</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ex1 through ex4 running">
+      <created>1558344879873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558344879873</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test5_TestLazyTuple - 2019.05.18 at 17h 01m 33s.xml">
-      <configuration name="Unittests for test5.TestLazyTuple" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test2_py - 2019.05.18 at 17h 06m 41s.xml">
       <configuration name="Unittests in test2.py" configurationId="tests" />
     </history-entry>
@@ -424,6 +521,9 @@
     <history-entry file="Unittests_for_testutil_TestUtil - 2019.05.20 at 10h 54m 47s.xml">
       <configuration name="Unittests for testutil.TestUtil" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test2_py - 2019.05.20 at 11h 56m 57s.xml">
+      <configuration name="pytest in test2.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="5714000" />
@@ -438,9 +538,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1933" height="1053" extended-state="6" />
+    <frame x="7" y="0" width="1738" height="1045" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22801474" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16431925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -449,18 +550,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43073592" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42424244" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3300866" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286026" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32969433" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.35064936" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3504367" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="13" visible="true" weight="0.19480519" />
+      <window_info anchor="bottom" id="Python Console" order="13" visible="true" weight="0.2117904" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -521,32 +622,18 @@
     <MESSAGE value="ex1 through ex4 running" />
     <option name="LAST_COMMIT_MESSAGE" value="ex1 through ex4 running" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/samples/src/poly/mpoly.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/samples/src/search/queens.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/test/files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/timeit.py" />
-    <entry file="file://$PROJECT_DIR$/samples/src/search/datastr8ts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/poly/fp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/samples/src/dwh/dwhdim.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -554,13 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/ex/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
@@ -598,16 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/numbers/testfermat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#35#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/timeit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -633,16 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/ex/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#31#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,58 +803,168 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/it/scratch.py" />
+    <entry file="file://$PROJECT_DIR$/samples/src/it/testutil.py" />
     <entry file="file://$PROJECT_DIR$/samples/src/fp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/it/scratch.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/it/testutil.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/src/it/iterators_rec.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/it/testiterators.py">
+    <entry file="file://$PROJECT_DIR$/samples/src/it/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#37#52#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="646">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/src/it/tee.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/src/it/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-          <folding>
-            <element signature="e#59#100#0" expanded="true" />
-          </folding>
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/src/it/timeconst.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/it/testiterators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#37#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/src/it/iterators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+        <state relative-caret-position="244">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/terminal.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml" />
+    <entry file="file://$PROJECT_DIR$/.idea/other.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/sandbox.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/ex/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
-            <element signature="e#119#123#0" expanded="true" />
+            <element signature="e#31#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/numbers/testfermat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="50" selection-start-line="50" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/num/Num.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/np/work.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/np/np1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/poly/mpoly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#113#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/poly/poly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/poly/fp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/tf/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <element signature="e#54#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/src/tf/keras1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#176#199#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,6 +1046,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
