@@ -2,7 +2,9 @@
 # js 2.9.2004
 
 from operator import mul
-from unittest import makeSuite, TestCase, TestSuite, TextTestRunner
+import unittest
+
+from util import *
 
 
 def f(x, y, z):
@@ -13,7 +15,7 @@ def g(*xs):
     return reduce(mul, xs)
 
 
-class TestUtil(TestCase):
+class TestUtil(unittest.TestCase):
     def testCurry(self):
         f1 = curry(f, 2)
         self.assertEqual(24, f1(3, 4))
@@ -45,12 +47,5 @@ class TestUtil(TestCase):
         self.assertEqual(24, g3())
 
 
-def suite():
-    suite = TestSuite()
-    suite.addTest(makeSuite(TestUtil))
-    return suite
-
-
 if __name__ == '__main__':
-    runner = TextTestRunner()
-    runner.run(suite())
+    unittest.main()

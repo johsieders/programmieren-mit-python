@@ -2,7 +2,7 @@
 ## iterator utilities
 ## reworked 1/9/2011
 
-from itertools import cycle, islice, izip
+from itertools import cycle, islice
 from operator import add
 
 
@@ -71,7 +71,7 @@ def faculty():
 
 
 exp = lambda: (1.0 / k for k in faculty())
-cos = lambda: (a * b for a, b in izip(cycle((1, 0, -1, 0)), exp()))
-sin = lambda: (a * b for a, b in izip(cycle((0, 1, 0, -1)), exp()))
+cos = lambda: (a * b for a, b in zip(cycle((1, 0, -1, 0)), exp()))
+sin = lambda: (a * b for a, b in zip(cycle((0, 1, 0, -1)), exp()))
 
 avg = lambda xs: (1.0 * sum(xs)) / len(xs)

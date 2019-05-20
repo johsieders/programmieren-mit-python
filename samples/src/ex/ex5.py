@@ -1,5 +1,5 @@
-## unit five
-## js 10.3.2004
+# unit five
+# js 10.3.2004
 
 
 # from types import IntType, LongType, SliceType
@@ -31,7 +31,7 @@ class talist(list):
 class xtuple(tuple):
     """xtuple-elements are computed on demand."""
 
-    def __init__(self, s, compute=lambda n: n):
+    def __init__(self, s, compute = lambda n : n):
         """ Entweder:
         a) s ist Laenge, compute berechnet das i-te Element. Oder:
         b) s ist andere Sequenz; compute ist Zugriff auf i-tes Element von s """
@@ -39,7 +39,7 @@ class xtuple(tuple):
         if isinstance(s, int):
             self.compute = compute
             self.length = s
-        else:  ## s knows [] and len()
+        else:               # s knows [] and len()
             self.compute = lambda n: s[n]
             self.length = len(s)
 
@@ -158,7 +158,7 @@ class LazyTuple(object):
     __rmul__ = __mul__
 
 
-## 2c
+# 2c
 class LazyDictionary(object):
     def __init__(self, keys, load=lambda x: x):
         """ keys = list of all keys, load(key) loads value """

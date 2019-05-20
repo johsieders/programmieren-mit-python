@@ -1,5 +1,5 @@
-## unit four
-## js 10.3.2004
+# unit four
+# js 10.3.2004
 
 # the dict operators contains all operators with
 # 1) arity (= 1 or 2) and
@@ -28,7 +28,7 @@ i2p = infix2postfix
 
 
 def bracketsOk(formula):
-    bc = 0  ## bracket count
+    bc = 0                      # bracket count
     for c in formula:
         if c == '(':
             bc += 1
@@ -54,7 +54,7 @@ def split(formula, operators):
     """
     bracketCount = 0        # counts brackets
     minWeight = 100000      # weight of lowest priority op
-    minIdx = -1  # index of this op
+    minIdx = -1             # index of this op
 
     for i, c in enumerate(formula):
         if c == '(':

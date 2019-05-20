@@ -1,9 +1,8 @@
 # Python Test iterators
 # js, 8.6.04
-
+import unittest
 from itertools import count, repeat
 from operator import add
-from unittest import makeSuite, TestCase, TestSuite, TextTestRunner
 
 from iterators import *
 
@@ -24,7 +23,7 @@ max_all = ((None, 500), (0, 700))
 min_all = ((None, 500), (0, 31), (5, 23), (15, 41), (20, 100), (30, 500))
 
 
-class TestIterator(TestCase):
+class TestIterator(unittest.TestCase):
 
     def testFmerge(self):
         self.failUnlessEqual(sum_sftf, take(10, fmerge(add, sf, tf)))

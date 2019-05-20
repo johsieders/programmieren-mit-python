@@ -4,6 +4,7 @@
 import unittest
 from ex4 import *
 
+
 class TestInfix(unittest.TestCase):
     def testInfix(self):
         self.assertEqual('x', i2p('x'))

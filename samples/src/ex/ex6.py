@@ -1,19 +1,19 @@
-## unit six
-## js 5.7.04
+# unit six
+# js 5.7.04
 
 from operator import add, mul
 
 
-def dim(A):  ## returns dimension of A
+def dim(A):                     # returns dimension of A
     return len(A), len(A[0])
 
 
-def col(A, j):  ## returns j-th column of A
+def col(A, j):                  # returns j-th column of A
     return [row[j] for row in A]
 
 
-def vadd(v, w):  ## adds two vectors
-    ##  alternativ: vadd = curry(map, add)
+def vadd(v, w):                 # adds two vectors
+    #  alternativ: vadd = curry(map, add)
     if len(v) != len(w):
         raise ValueError
     return map(add, v, w)
@@ -26,13 +26,13 @@ def vmul(v, w):  ## multiplies two vectors
 
 
 def madd(A, B):  ## adds two matrices
-    ##  alternativ: madd = curry(map, vadd) = curry(map, curry(map, add))
+    #  alternativ: madd = curry(map, vadd) = curry(map, curry(map, add))
     if dim(A) != dim(B):
         raise ValueError
     return map(vadd, A, B)
 
 
-def mmul(A, B):  ## multiplies two matrices
+def mmul(A, B):                     # multiplies two matrices
     if dim(A)[1] != dim(B)[0]:
         raise ValueError
     return [[vmul(A[i], col(B, j)) for j in range(len(B[0]))] for i in range(len(A))]
