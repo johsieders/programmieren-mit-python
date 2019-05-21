@@ -62,7 +62,3 @@ def makeFp(p):
 
     Fp.p = p
     return Fp
-
-
-if __name__ == '__main__':
-    pass

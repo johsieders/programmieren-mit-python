@@ -1,9 +1,10 @@
 # Polynome
 # js, 25.05.01
 # ueberarbeitung 29.12.03, 1.1.2004, 15.7.2004, 9.8.2004
-
+# Portierung nach 3.6 21.5.2019
 
 from functools import reduce
+
 flip = lambda f: lambda x, y: f(y, x)  # flips args
 
 
@@ -22,11 +23,13 @@ class Polynom(list):
     def __init__(self, cs):
         """ cs: sequence of coefficients
             trailing zeros are discarded """
+        try:                            # test for iterable
+            iter(cs)
+        except TypeError:
+            cs = [cs]                   # make cs iterable
+
         if len(cs) == 0:
             raise(ValueError, 'no coefficients')
-
-        if type(cs) is Polynom:
-            pass
 
         self.__zero = cs[0] - cs[0]
         i = len(cs) - 1
@@ -56,12 +59,13 @@ class Polynom(list):
         return Polynom(self)
 
     def __add__(self, p):
-        q = Polynom(p)
-        if len(self) > len(q):
-            a, b = self, q
+        if type(p) is not Polynom:
+            p = Polynom(p)
+        if len(self) > len(p):
+            a, b = self, p
         else:
-            a, b = q, self
-        result = list(a)  ## a is at least as long as b
+            a, b = p, self
+        result = list(a)                # a is at least as long as b
         for i, c in enumerate(b):
             result[i] += c
         return Polynom(result)
@@ -70,26 +74,27 @@ class Polynom(list):
         return self + -p
 
     def __mul__(self, p):
-        s, q = coerce(self, p)
-        result = [self.__zero] * (len(self) + len(q) - 1)
+        if type(p) is not Polynom:
+            p = Polynom(p)
+        result = [self.__zero] * (len(self) + len(p) - 1)
         for i in range(len(self)):
-            for j in range(len(q)):
-                result[i + j] += self[i] * q[j]
+            for j in range(len(p)):
+                result[i + j] += self[i] * p[j]
         return Polynom(result)
 
     def __divmod__(self, p):
         """ q = quotient
             r = remainder
             invariant: self = p * q + r """
-        s, p = coerce(self, p)
+        p = Polynom(p)
         q = []
         r = list(self)
         while len(r) >= len(p):
-            c = r[-1] / p[-1]  ## quotient of highest coefficients
+            c = r[-1] / p[-1]       # quotient of highest coefficients
             q.append(c)
             for i in range(-len(p), 0):
                 r[i] -= c * p[i]
-            del r[-1]  ## discard highest coefficient
+            del r[-1]               # discard highest coefficient
 
         q.reverse()
         if len(q) == 0:
@@ -105,11 +110,10 @@ class Polynom(list):
         return divmod(self, p)[0]
 
     def __pow__(self, n):
-        ## kein coerce!!
         from operator import mul
-        if not isinstance(n, (int, long)):
+        if type(n) is not int:
             raise TypeError
-        if not n:
+        if n == 0:
             return Polynom([self.__zero])
         else:
             return reduce(mul, [self] * n)
@@ -123,7 +127,15 @@ class Polynom(list):
 
 p = Polynom([-2, 2] * 30)
 if __name__ == '__main__':
-    from timeit import *
-
-    t = Timer('p(7543.0)', 'from poly import p')
-    t.repeat(3, 10000)
+    p = Polynom([1,1,1])
+    q = p + 3
+    print(q)
+    q = p - 3
+    print(q)
+    q = p*5
+    print (q)
+    q = p(p)
+    print(q)
+    # from timeit import *
+    # t = Timer('p(7543.0)', 'from poly import p')
+    # t.repeat(3, 10000)

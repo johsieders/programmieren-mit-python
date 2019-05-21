@@ -10,7 +10,6 @@
       <sourceFolder url="file://$MODULE_DIR$/samples/src/it" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/iv" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/np" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/samples/src/num" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/numbers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/or" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/poly" isTestSource="false" />
@@ -19,9 +18,11 @@
       <sourceFolder url="file://$MODULE_DIR$/samples/src/search" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/tax" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/tf" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/venv" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/visual" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/samples/src/web" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/samples/src/ai" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
