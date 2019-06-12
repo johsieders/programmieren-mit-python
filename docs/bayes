@@ -1,0 +1,11 @@
+# Heading
+## another heading
+
+$$ a = \sqrt(b) $$
+
+* a bullet
+* another bullet
+** a subbullet
+
+`a = b + c`
+
