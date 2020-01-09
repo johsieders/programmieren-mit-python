@@ -13,11 +13,10 @@ from tensorflow import keras
 # import matplotlib.pyplot as plt
 
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
-                   'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
+               'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
 
 def fashion():
-
     # get train_images, train labels; test_images, test_labels
     fashion_mnist = keras.datasets.fashion_mnist
     (train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
@@ -27,7 +26,7 @@ def fashion():
 
     # define a neuronal network with two layers
     model = keras.Sequential([
-        keras.layers.Flatten(input_shape=(28, 28)),         # formatting only
+        keras.layers.Flatten(input_shape=(28, 28)),  # formatting only
         keras.layers.Dense(512, activation=tf.nn.relu),
         keras.layers.Dense(10, activation=tf.nn.softmax)
     ])
@@ -39,7 +38,7 @@ def fashion():
     # train it
     model.fit(train_images, train_labels, epochs=6)
 
-    #evaluate it
+    # evaluate it
     test_loss, test_acc = model.evaluate(test_images, test_labels)
     predictions = model.predict(test_images)
 
@@ -50,4 +49,3 @@ if __name__ == '__main__':
     acc, loss = fashion()
     print('Test accuracy:', acc)
     print('Test loss:', loss)
-
